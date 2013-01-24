@@ -31,12 +31,6 @@
 		96690D96140736B200921954 /* CustomBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 96690D94140736B200921954 /* CustomBadge.h */; };
 		96690D97140736B200921954 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 96690D95140736B200921954 /* CustomBadge.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
-		9680957113CD344E0014D09A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680957013CD344E0014D09A /* SenTestingKit.framework */; };
-		9680957413CD344E0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
-		9680957913CD344E0014D09A /* libopenLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956213CD344D0014D09A /* libopenLib.a */; };
-		9680957F13CD344E0014D09A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9680957D13CD344E0014D09A /* InfoPlist.strings */; };
-		9680958113CD344E0014D09A /* openLibTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9680958013CD344E0014D09A /* openLibTests.h */; };
-		9680958313CD344E0014D09A /* openLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9680958213CD344E0014D09A /* openLibTests.m */; };
 		968A5F6E13CEA39C00A9A7BE /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A5F6C13CEA39C00A9A7BE /* MBProgressHUD.h */; };
 		968A5F6F13CEA39C00A9A7BE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 968A5F6D13CEA39C00A9A7BE /* MBProgressHUD.m */; };
 		968A602D13CEC60F00A9A7BE /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A602513CEC60F00A9A7BE /* Base64.h */; };
@@ -61,32 +55,23 @@
 		96C68ED7148CC0C100DBC805 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C68ED3148CC0C100DBC805 /* NSString+AESCrypt.m */; };
 		A722E943165CBCC50025A614 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E930165CBCC50025A614 /* AFHTTPClient.h */; };
 		A722E944165CBCC50025A614 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E931165CBCC50025A614 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E945165CBCC50025A614 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E931165CBCC50025A614 /* AFHTTPClient.m */; };
 		A722E946165CBCC50025A614 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E932165CBCC50025A614 /* AFHTTPRequestOperation.h */; };
 		A722E947165CBCC50025A614 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E933165CBCC50025A614 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E948165CBCC50025A614 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E933165CBCC50025A614 /* AFHTTPRequestOperation.m */; };
 		A722E949165CBCC50025A614 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E934165CBCC50025A614 /* AFImageRequestOperation.h */; };
 		A722E94A165CBCC50025A614 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E935165CBCC50025A614 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E94B165CBCC50025A614 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E935165CBCC50025A614 /* AFImageRequestOperation.m */; };
 		A722E94C165CBCC50025A614 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E936165CBCC50025A614 /* AFJSONRequestOperation.h */; };
 		A722E94D165CBCC50025A614 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E937165CBCC50025A614 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E94E165CBCC50025A614 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E937165CBCC50025A614 /* AFJSONRequestOperation.m */; };
 		A722E94F165CBCC50025A614 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E938165CBCC50025A614 /* AFNetworkActivityIndicatorManager.h */; };
 		A722E950165CBCC50025A614 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E939165CBCC50025A614 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E951165CBCC50025A614 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E939165CBCC50025A614 /* AFNetworkActivityIndicatorManager.m */; };
 		A722E952165CBCC50025A614 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E93A165CBCC50025A614 /* AFNetworking.h */; };
 		A722E953165CBCC50025A614 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E93B165CBCC50025A614 /* AFPropertyListRequestOperation.h */; };
 		A722E954165CBCC50025A614 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E93C165CBCC50025A614 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E955165CBCC50025A614 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E93C165CBCC50025A614 /* AFPropertyListRequestOperation.m */; };
 		A722E956165CBCC50025A614 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E93D165CBCC50025A614 /* AFURLConnectionOperation.h */; };
 		A722E957165CBCC50025A614 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E93E165CBCC50025A614 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E958165CBCC50025A614 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E93E165CBCC50025A614 /* AFURLConnectionOperation.m */; };
 		A722E959165CBCC50025A614 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E93F165CBCC50025A614 /* AFXMLRequestOperation.h */; };
 		A722E95A165CBCC50025A614 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E940165CBCC50025A614 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E95B165CBCC50025A614 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E940165CBCC50025A614 /* AFXMLRequestOperation.m */; };
 		A722E95C165CBCC50025A614 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A722E941165CBCC50025A614 /* UIImageView+AFNetworking.h */; };
 		A722E95D165CBCC50025A614 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E942165CBCC50025A614 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A722E95E165CBCC50025A614 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A722E942165CBCC50025A614 /* UIImageView+AFNetworking.m */; };
 		A737C0AF1663A15700E5447B /* MKAnnotationView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A737C09B1663A15700E5447B /* MKAnnotationView+WebCache.h */; };
 		A737C0B01663A15700E5447B /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A737C09C1663A15700E5447B /* MKAnnotationView+WebCache.m */; };
 		A737C0B11663A15700E5447B /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A737C09D1663A15700E5447B /* SDImageCache.h */; };
@@ -108,16 +93,6 @@
 		A737C0C11663A15700E5447B /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A737C0AD1663A15700E5447B /* UIImageView+WebCache.h */; };
 		A737C0C21663A15700E5447B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A737C0AE1663A15700E5447B /* UIImageView+WebCache.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9680957713CD344E0014D09A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9680955913CD344D0014D09A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9680956113CD344D0014D09A;
-			remoteInfo = openLib;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4A012008165E0773003C2328 /* CODialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CODialog.h; sourceTree = "<group>"; };
@@ -141,18 +116,12 @@
 		4A453ED716A56B0200EB0D85 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
 		96017B4D14209D4F007C6FD7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		96017B4E14209D4F007C6FD7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
-		965E873E143455BF007BB679 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "/Users/Jason/Documents/Projects/iPhone/openLib/openLibTests/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
 		96690D94140736B200921954 /* CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
 		96690D95140736B200921954 /* CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
-		9680956213CD344D0014D09A /* libopenLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopenLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680956513CD344D0014D09A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9680956913CD344D0014D09A /* openLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openLib-Prefix.pch"; sourceTree = "<group>"; };
-		9680956F13CD344E0014D09A /* openLibTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openLibTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9680956913CD344D0014D09A /* libOpen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
 		9680957013CD344E0014D09A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9680957C13CD344E0014D09A /* openLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "openLibTests-Info.plist"; sourceTree = "<group>"; };
-		9680957E13CD344E0014D09A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9680958013CD344E0014D09A /* openLibTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = openLibTests.h; sourceTree = "<group>"; };
-		9680958213CD344E0014D09A /* openLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openLibTests.m; sourceTree = "<group>"; };
 		968A5F6C13CEA39C00A9A7BE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		968A5F6D13CEA39C00A9A7BE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		968A602513CEC60F00A9A7BE /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
@@ -235,16 +204,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9680956B13CD344E0014D09A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9680957113CD344E0014D09A /* SenTestingKit.framework in Frameworks */,
-				9680957413CD344E0014D09A /* Foundation.framework in Frameworks */,
-				9680957913CD344E0014D09A /* libopenLib.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -307,8 +266,7 @@
 		9680955713CD344D0014D09A = {
 			isa = PBXGroup;
 			children = (
-				9680956713CD344D0014D09A /* openLib */,
-				9680957A13CD344E0014D09A /* openLibTests */,
+				9680956713CD344D0014D09A /* libOpen */,
 				9680956413CD344D0014D09A /* Frameworks */,
 				9680956313CD344D0014D09A /* Products */,
 			);
@@ -317,8 +275,7 @@
 		9680956313CD344D0014D09A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9680956213CD344D0014D09A /* libopenLib.a */,
-				9680956F13CD344E0014D09A /* openLibTests.octest */,
+				9680956213CD344D0014D09A /* liblibOpen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,7 +299,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9680956713CD344D0014D09A /* openLib */ = {
+		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
 				4A453ED416A56B0200EB0D85 /* NSLogger */,
@@ -366,32 +323,13 @@
 				968A5F6B13CEA39C00A9A7BE /* MBProgressHUD */,
 				9680956813CD344D0014D09A /* Supporting Files */,
 			);
-			path = openLib;
+			path = libOpen;
 			sourceTree = "<group>";
 		};
 		9680956813CD344D0014D09A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9680956913CD344D0014D09A /* openLib-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9680957A13CD344E0014D09A /* openLibTests */ = {
-			isa = PBXGroup;
-			children = (
-				9680958013CD344E0014D09A /* openLibTests.h */,
-				9680958213CD344E0014D09A /* openLibTests.m */,
-				9680957B13CD344E0014D09A /* Supporting Files */,
-			);
-			path = openLibTests;
-			sourceTree = "<group>";
-		};
-		9680957B13CD344E0014D09A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9680957C13CD344E0014D09A /* openLibTests-Info.plist */,
-				9680957D13CD344E0014D09A /* InfoPlist.strings */,
+				9680956913CD344D0014D09A /* libOpen-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -557,9 +495,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9680956113CD344D0014D09A /* openLib */ = {
+		9680956113CD344D0014D09A /* libOpen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9680958613CD344E0014D09A /* Build configuration list for PBXNativeTarget "openLib" */;
+			buildConfigurationList = 9680958613CD344E0014D09A /* Build configuration list for PBXNativeTarget "libOpen" */;
 			buildPhases = (
 				9680955E13CD344D0014D09A /* Sources */,
 				9680955F13CD344D0014D09A /* Frameworks */,
@@ -570,29 +508,10 @@
 			);
 			dependencies = (
 			);
-			name = openLib;
-			productName = openLib;
-			productReference = 9680956213CD344D0014D09A /* libopenLib.a */;
+			name = libOpen;
+			productName = libOpen;
+			productReference = 9680956213CD344D0014D09A /* liblibOpen.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		9680956E13CD344E0014D09A /* openLibTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9680958913CD344E0014D09A /* Build configuration list for PBXNativeTarget "openLibTests" */;
-			buildPhases = (
-				9680956A13CD344E0014D09A /* Sources */,
-				9680956B13CD344E0014D09A /* Frameworks */,
-				9680956C13CD344E0014D09A /* Resources */,
-				9680956D13CD344E0014D09A /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9680957813CD344E0014D09A /* PBXTargetDependency */,
-			);
-			name = openLibTests;
-			productName = openLibTests;
-			productReference = 9680956F13CD344E0014D09A /* openLibTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -602,7 +521,7 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = 9680955C13CD344D0014D09A /* Build configuration list for PBXProject "openLib" */;
+			buildConfigurationList = 9680955C13CD344D0014D09A /* Build configuration list for PBXProject "libOpen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -614,22 +533,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9680956113CD344D0014D09A /* openLib */,
-				9680956E13CD344E0014D09A /* openLibTests */,
+				9680956113CD344D0014D09A /* libOpen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9680956C13CD344E0014D09A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9680957F13CD344E0014D09A /* InfoPlist.strings in Resources */,
-				9680958113CD344E0014D09A /* openLibTests.h in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A737C0E31663A5F500E5447B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,22 +547,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9680956D13CD344E0014D09A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9680955E13CD344D0014D09A /* Sources */ = {
@@ -698,44 +591,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9680956A13CD344E0014D09A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9680958313CD344E0014D09A /* openLibTests.m in Sources */,
-				A722E945165CBCC50025A614 /* AFHTTPClient.m in Sources */,
-				A722E948165CBCC50025A614 /* AFHTTPRequestOperation.m in Sources */,
-				A722E94B165CBCC50025A614 /* AFImageRequestOperation.m in Sources */,
-				A722E94E165CBCC50025A614 /* AFJSONRequestOperation.m in Sources */,
-				A722E951165CBCC50025A614 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				A722E955165CBCC50025A614 /* AFPropertyListRequestOperation.m in Sources */,
-				A722E958165CBCC50025A614 /* AFURLConnectionOperation.m in Sources */,
-				A722E95B165CBCC50025A614 /* AFXMLRequestOperation.m in Sources */,
-				A722E95E165CBCC50025A614 /* UIImageView+AFNetworking.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9680957813CD344E0014D09A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9680956113CD344D0014D09A /* openLib */;
-			targetProxy = 9680957713CD344E0014D09A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9680957D13CD344E0014D09A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9680957E13CD344E0014D09A /* en */,
-				965E873E143455BF007BB679 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9680958413CD344E0014D09A /* Debug */ = {
@@ -759,6 +615,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -776,6 +633,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -785,13 +643,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				DSTROOT = /tmp/openLib.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/openLib\"",
-				);
+				DSTROOT = /tmp/libOpen.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "openLib/openLib-Prefix.pch";
+				GCC_PREFIX_HEADER = "libOpen/libOpen-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				LIBRARY_SEARCH_PATHS = (
@@ -799,7 +654,7 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = openLib;
+				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -809,13 +664,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				DSTROOT = /tmp/openLib.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/openLib\"",
-				);
+				DSTROOT = /tmp/libOpen.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "openLib/openLib-Prefix.pch";
+				GCC_PREFIX_HEADER = "libOpen/libOpen-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				LIBRARY_SEARCH_PATHS = (
@@ -823,49 +675,15 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = openLib;
+				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9680958A13CD344E0014D09A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/openLib\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "openLib/openLib-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "openLibTests/openLibTests-Info.plist";
-				PRODUCT_NAME = openLibTests;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		9680958B13CD344E0014D09A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/openLib\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "openLib/openLib-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "openLibTests/openLibTests-Info.plist";
-				PRODUCT_NAME = openLibTests;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9680955C13CD344D0014D09A /* Build configuration list for PBXProject "openLib" */ = {
+		9680955C13CD344D0014D09A /* Build configuration list for PBXProject "libOpen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9680958413CD344E0014D09A /* Debug */,
@@ -874,20 +692,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9680958613CD344E0014D09A /* Build configuration list for PBXNativeTarget "openLib" */ = {
+		9680958613CD344E0014D09A /* Build configuration list for PBXNativeTarget "libOpen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9680958713CD344E0014D09A /* Debug */,
 				9680958813CD344E0014D09A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9680958913CD344E0014D09A /* Build configuration list for PBXNativeTarget "openLibTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9680958A13CD344E0014D09A /* Debug */,
-				9680958B13CD344E0014D09A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
