@@ -26,8 +26,6 @@
 		4A453ED816A56B0200EB0D85 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A453ED516A56B0200EB0D85 /* LoggerClient.h */; };
 		4A453ED916A56B0200EB0D85 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A453ED616A56B0200EB0D85 /* LoggerClient.m */; };
 		4A453EDA16A56B0200EB0D85 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A453ED716A56B0200EB0D85 /* LoggerCommon.h */; };
-		96017B4F14209D4F007C6FD7 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 96017B4D14209D4F007C6FD7 /* JSONKit.h */; };
-		96017B5014209D4F007C6FD7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 96017B4E14209D4F007C6FD7 /* JSONKit.m */; };
 		96690D96140736B200921954 /* CustomBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 96690D94140736B200921954 /* CustomBadge.h */; };
 		96690D97140736B200921954 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 96690D95140736B200921954 /* CustomBadge.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
@@ -114,8 +112,6 @@
 		4A453ED516A56B0200EB0D85 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
 		4A453ED616A56B0200EB0D85 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
 		4A453ED716A56B0200EB0D85 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
-		96017B4D14209D4F007C6FD7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
-		96017B4E14209D4F007C6FD7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		96690D94140736B200921954 /* CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
 		96690D95140736B200921954 /* CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,15 +241,6 @@
 			path = NSLogger;
 			sourceTree = "<group>";
 		};
-		96017B5114209D64007C6FD7 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				96017B4D14209D4F007C6FD7 /* JSONKit.h */,
-				96017B4E14209D4F007C6FD7 /* JSONKit.m */,
-			);
-			name = JSONKit;
-			sourceTree = "<group>";
-		};
 		96690D93140736B200921954 /* CustomBadge */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,7 +301,6 @@
 				4A12A039165B7562007AE86A /* NSData+Base64Aware.h */,
 				4A12A03A165B7562007AE86A /* NSData+Base64Aware.m */,
 				96C68ECF148CC0C100DBC805 /* AESCrypt */,
-				96017B5114209D64007C6FD7 /* JSONKit */,
 				96690D93140736B200921954 /* CustomBadge */,
 				968A603513CEC64A00A9A7BE /* MD5 */,
 				968A602413CEC60F00A9A7BE /* Base64 */,
@@ -454,7 +440,6 @@
 				968A603413CEC60F00A9A7BE /* rijndael.h in Headers */,
 				968A603813CEC64A00A9A7BE /* NSString_MD5.h in Headers */,
 				96690D96140736B200921954 /* CustomBadge.h in Headers */,
-				96017B4F14209D4F007C6FD7 /* JSONKit.h in Headers */,
 				96C68ED4148CC0C100DBC805 /* NSData+AESCrypt.h in Headers */,
 				96C68ED6148CC0C100DBC805 /* NSString+AESCrypt.h in Headers */,
 				4A1AE358164CE1FB00C12442 /* Reachability.h in Headers */,
@@ -560,7 +545,6 @@
 				968A603313CEC60F00A9A7BE /* rijndael.c in Sources */,
 				968A603913CEC64A00A9A7BE /* NSString_MD5.m in Sources */,
 				96690D97140736B200921954 /* CustomBadge.m in Sources */,
-				96017B5014209D4F007C6FD7 /* JSONKit.m in Sources */,
 				96C68ED5148CC0C100DBC805 /* NSData+AESCrypt.m in Sources */,
 				96C68ED7148CC0C100DBC805 /* NSString+AESCrypt.m in Sources */,
 				4A1AE359164CE1FB00C12442 /* Reachability.m in Sources */,
