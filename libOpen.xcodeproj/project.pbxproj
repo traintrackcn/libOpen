@@ -26,6 +26,8 @@
 		4A453ED816A56B0200EB0D85 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A453ED516A56B0200EB0D85 /* LoggerClient.h */; };
 		4A453ED916A56B0200EB0D85 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A453ED616A56B0200EB0D85 /* LoggerClient.m */; };
 		4A453EDA16A56B0200EB0D85 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A453ED716A56B0200EB0D85 /* LoggerCommon.h */; };
+		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
+		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		96690D96140736B200921954 /* CustomBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 96690D94140736B200921954 /* CustomBadge.h */; };
 		96690D97140736B200921954 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 96690D95140736B200921954 /* CustomBadge.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
@@ -112,6 +114,8 @@
 		4A453ED516A56B0200EB0D85 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
 		4A453ED616A56B0200EB0D85 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
 		4A453ED716A56B0200EB0D85 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
+		4AECFFF216BA489A002403FD /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
 		96690D94140736B200921954 /* CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
 		96690D95140736B200921954 /* CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +231,8 @@
 				4A012014165E2DEF003C2328 /* TNibUtil.h */,
 				4A012015165E2DEF003C2328 /* TNibUtil.m */,
 				4A12A08E165BB900007AE86A /* GlobalDefine.h */,
+				4AECFFF116BA489A002403FD /* TRootViewController.h */,
+				4AECFFF216BA489A002403FD /* TRootViewController.m */,
 			);
 			path = Tao;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				A737C0C11663A15700E5447B /* UIImageView+WebCache.h in Headers */,
 				4A453ED816A56B0200EB0D85 /* LoggerClient.h in Headers */,
 				4A453EDA16A56B0200EB0D85 /* LoggerCommon.h in Headers */,
+				4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +579,7 @@
 				A737C0C01663A15700E5447B /* UIButton+WebCache.m in Sources */,
 				A737C0C21663A15700E5447B /* UIImageView+WebCache.m in Sources */,
 				4A453ED916A56B0200EB0D85 /* LoggerClient.m in Sources */,
+				4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
