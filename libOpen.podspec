@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.subspec 'ZUUIRevealController' do |zuui|
-    zuui.source_files    = '*.{h,m}'
+    zuui.source_files    = 'libOpen/ZUUIRevealController/*.{h,m}'
     zuui.requires_arc    = false
   end
 
