@@ -6,13 +6,28 @@ Pod::Spec.new do |s|
   s.summary = 'An Objective-C library'
   s.homepage = 'https://github.com/traintrackcn/libOpen'
   s.author = { 'traintrackcn' => 'traintrackcn@gmail.com' }
- # s.source = { :git => 'git://github.com/lukeredpath/libPusher.git', :tag => 'v1.3' }
-  s.source_files = 'libOpen/**/{NS,SD,UI,T,G,Pop}*.{h,m}'
-  s.requires_arc = true
+# s.source = { :git => 'git://github.com/lukeredpath/libPusher.git', :tag => 'v1.3' }
+#  s.source_files = 'libOpen/**/{NS,SD,UI,T,G}*.{h,m}'
+# s.requires_arc = true
   
   s.subspec 'ZUUIRevealController' do |zuui|
     zuui.source_files    = 'libOpen/ZUUIRevealController/*.{h,m}'
     zuui.requires_arc    = false
+  end
+  
+  s.subspec 'Tao' do |t|
+    tao.source_files    = 'libOpen/Tao/*.{h,m}'
+    tao.requires_arc    = true
+  end
+  
+  s.subspec 'CommonARC' do |c|
+    c.source_files    = 'libOpen/CommonARC/*.{h,m}'
+    c.requires_arc    = true
+  end
+  
+  s.subspec 'CommonNoARC' do |c|
+    c.source_files    = 'libOpen/CommonNoARC/*.{h,m}'
+    c.requires_arc    = false
   end
   
 

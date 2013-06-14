@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A012016165E2DEF003C2328 /* TNibUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A012014165E2DEF003C2328 /* TNibUtil.h */; };
 		4A012017165E2DEF003C2328 /* TNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A012015165E2DEF003C2328 /* TNibUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4A12A041165B75C3007AE86A /* NSString+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A03D165B75C3007AE86A /* NSString+KTCommon.h */; };
-		4A12A042165B75C3007AE86A /* NSString+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12A03E165B75C3007AE86A /* NSString+KTCommon.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4A12A043165B75C3007AE86A /* UIImage+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A03F165B75C3007AE86A /* UIImage+KTCommon.h */; };
-		4A12A044165B75C3007AE86A /* UIImage+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12A040165B75C3007AE86A /* UIImage+KTCommon.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4A12A04A165B75FF007AE86A /* ZUUIRevealController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A047165B75FF007AE86A /* ZUUIRevealController.h */; };
 		4A12A04B165B75FF007AE86A /* ZUUIRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12A048165B75FF007AE86A /* ZUUIRevealController.m */; };
 		4A12A091165BB900007AE86A /* GlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A08E165BB900007AE86A /* GlobalDefine.h */; };
@@ -22,9 +18,12 @@
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
-		4AA44E65176B0C7800EF33C6 /* PopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E62176B0C7800EF33C6 /* PopoverView.h */; };
-		4AA44E66176B0C7800EF33C6 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E63176B0C7800EF33C6 /* PopoverView.m */; };
-		4AA44E67176B0C7800EF33C6 /* PopoverView_Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E64176B0C7800EF33C6 /* PopoverView_Configuration.h */; };
+		4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E69176B110100EF33C6 /* NSString+KTCommon.h */; };
+		4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */; };
+		4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E6B176B110100EF33C6 /* UIImage+KTCommon.h */; };
+		4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */; };
+		4AA44E74176B110100EF33C6 /* NSData+Base64Aware.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E6E176B110100EF33C6 /* NSData+Base64Aware.h */; };
+		4AA44E75176B110100EF33C6 /* NSData+Base64Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6F176B110100EF33C6 /* NSData+Base64Aware.m */; };
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
 		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
@@ -39,10 +38,6 @@
 /* Begin PBXFileReference section */
 		4A012014165E2DEF003C2328 /* TNibUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNibUtil.h; sourceTree = "<group>"; };
 		4A012015165E2DEF003C2328 /* TNibUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNibUtil.m; sourceTree = "<group>"; };
-		4A12A03D165B75C3007AE86A /* NSString+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KTCommon.h"; sourceTree = "<group>"; };
-		4A12A03E165B75C3007AE86A /* NSString+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTCommon.m"; sourceTree = "<group>"; };
-		4A12A03F165B75C3007AE86A /* UIImage+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KTCommon.h"; sourceTree = "<group>"; };
-		4A12A040165B75C3007AE86A /* UIImage+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KTCommon.m"; sourceTree = "<group>"; };
 		4A12A047165B75FF007AE86A /* ZUUIRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUUIRevealController.h; sourceTree = "<group>"; };
 		4A12A048165B75FF007AE86A /* ZUUIRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUUIRevealController.m; sourceTree = "<group>"; };
 		4A12A08E165BB900007AE86A /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
@@ -52,9 +47,12 @@
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4A9867D016E44D3400F3797D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4AA44E60176AF8CA00EF33C6 /* libOpen.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOpen.podspec; sourceTree = "<group>"; };
-		4AA44E62176B0C7800EF33C6 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
-		4AA44E63176B0C7800EF33C6 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
-		4AA44E64176B0C7800EF33C6 /* PopoverView_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView_Configuration.h; sourceTree = "<group>"; };
+		4AA44E69176B110100EF33C6 /* NSString+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KTCommon.h"; sourceTree = "<group>"; };
+		4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTCommon.m"; sourceTree = "<group>"; };
+		4AA44E6B176B110100EF33C6 /* UIImage+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KTCommon.h"; sourceTree = "<group>"; };
+		4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KTCommon.m"; sourceTree = "<group>"; };
+		4AA44E6E176B110100EF33C6 /* NSData+Base64Aware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Aware.h"; sourceTree = "<group>"; };
+		4AA44E6F176B110100EF33C6 /* NSData+Base64Aware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Aware.m"; sourceTree = "<group>"; };
 		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4AECFFF216BA489A002403FD /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,14 +115,24 @@
 			path = Tao;
 			sourceTree = "<group>";
 		};
-		4AA44E61176B0C7800EF33C6 /* PopoverView */ = {
+		4AA44E68176B110100EF33C6 /* CommonARC */ = {
 			isa = PBXGroup;
 			children = (
-				4AA44E62176B0C7800EF33C6 /* PopoverView.h */,
-				4AA44E63176B0C7800EF33C6 /* PopoverView.m */,
-				4AA44E64176B0C7800EF33C6 /* PopoverView_Configuration.h */,
+				4AA44E69176B110100EF33C6 /* NSString+KTCommon.h */,
+				4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */,
+				4AA44E6B176B110100EF33C6 /* UIImage+KTCommon.h */,
+				4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */,
 			);
-			path = PopoverView;
+			path = CommonARC;
+			sourceTree = "<group>";
+		};
+		4AA44E6D176B110100EF33C6 /* CommonNoARC */ = {
+			isa = PBXGroup;
+			children = (
+				4AA44E6E176B110100EF33C6 /* NSData+Base64Aware.h */,
+				4AA44E6F176B110100EF33C6 /* NSData+Base64Aware.m */,
+			);
+			path = CommonNoARC;
 			sourceTree = "<group>";
 		};
 		9680955713CD344D0014D09A = {
@@ -169,13 +177,10 @@
 		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
-				4AA44E61176B0C7800EF33C6 /* PopoverView */,
+				4AA44E68176B110100EF33C6 /* CommonARC */,
+				4AA44E6D176B110100EF33C6 /* CommonNoARC */,
 				4A12A08D165BB900007AE86A /* Tao */,
 				4A12A045165B75FF007AE86A /* ZUUIRevealController */,
-				4A12A03D165B75C3007AE86A /* NSString+KTCommon.h */,
-				4A12A03E165B75C3007AE86A /* NSString+KTCommon.m */,
-				4A12A03F165B75C3007AE86A /* UIImage+KTCommon.h */,
-				4A12A040165B75C3007AE86A /* UIImage+KTCommon.m */,
 				9680956813CD344D0014D09A /* Supporting Files */,
 			);
 			path = libOpen;
@@ -196,15 +201,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A12A041165B75C3007AE86A /* NSString+KTCommon.h in Headers */,
-				4A12A043165B75C3007AE86A /* UIImage+KTCommon.h in Headers */,
 				4A12A04A165B75FF007AE86A /* ZUUIRevealController.h in Headers */,
 				4A12A091165BB900007AE86A /* GlobalDefine.h in Headers */,
 				4A012016165E2DEF003C2328 /* TNibUtil.h in Headers */,
 				4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */,
 				4A98679316E449C200F3797D /* TDeviceUtil.h in Headers */,
-				4AA44E65176B0C7800EF33C6 /* PopoverView.h in Headers */,
-				4AA44E67176B0C7800EF33C6 /* PopoverView_Configuration.h in Headers */,
+				4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */,
+				4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */,
+				4AA44E74176B110100EF33C6 /* NSData+Base64Aware.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,13 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A12A042165B75C3007AE86A /* NSString+KTCommon.m in Sources */,
-				4A12A044165B75C3007AE86A /* UIImage+KTCommon.m in Sources */,
 				4A12A04B165B75FF007AE86A /* ZUUIRevealController.m in Sources */,
 				4A012017165E2DEF003C2328 /* TNibUtil.m in Sources */,
 				4A98679416E449C200F3797D /* TDeviceUtil.m in Sources */,
 				4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */,
-				4AA44E66176B0C7800EF33C6 /* PopoverView.m in Sources */,
+				4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */,
+				4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */,
+				4AA44E75176B110100EF33C6 /* NSData+Base64Aware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
