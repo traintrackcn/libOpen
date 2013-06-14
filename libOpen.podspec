@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
 #  s.source_files = 'libOpen/**/{NS,SD,UI,T,G}*.{h,m}'
 # s.requires_arc = true
   
-  s.subspec 'ZUUIRevealController' do |zuui|
-    zuui.source_files    = 'libOpen/ZUUIRevealController/*.{h,m}'
-    zuui.requires_arc    = false
-  end
+#  s.subspec 'ZUUIRevealController' do |zuui|
+ #   zuui.source_files    = 'libOpen/ZUUIRevealController/*.{h,m}'
+  #  zuui.requires_arc    = false
+  #end
   
   s.subspec 'Tao' do |t|
     t.source_files    = 'libOpen/Tao/*.{h,m}'
