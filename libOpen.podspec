@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = 'libOpen/*'
   s.requires_arc = true
  # s.dependency 'SocketRocket'
- # s.framework = 'ImageIO'
+  s.framework = 'ImageIO'
 end
