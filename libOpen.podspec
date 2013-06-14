@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Tao' do |t|
-    tao.source_files    = 'libOpen/Tao/*.{h,m}'
-    tao.requires_arc    = true
+    t.source_files    = 'libOpen/Tao/*.{h,m}'
+    t.requires_arc    = true
   end
   
   s.subspec 'CommonARC' do |c|
