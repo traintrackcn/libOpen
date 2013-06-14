@@ -22,6 +22,9 @@
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
+		4AA44E65176B0C7800EF33C6 /* PopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E62176B0C7800EF33C6 /* PopoverView.h */; };
+		4AA44E66176B0C7800EF33C6 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E63176B0C7800EF33C6 /* PopoverView.m */; };
+		4AA44E67176B0C7800EF33C6 /* PopoverView_Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E64176B0C7800EF33C6 /* PopoverView_Configuration.h */; };
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
 		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
@@ -49,6 +52,9 @@
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4A9867D016E44D3400F3797D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4AA44E60176AF8CA00EF33C6 /* libOpen.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOpen.podspec; sourceTree = "<group>"; };
+		4AA44E62176B0C7800EF33C6 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		4AA44E63176B0C7800EF33C6 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		4AA44E64176B0C7800EF33C6 /* PopoverView_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView_Configuration.h; sourceTree = "<group>"; };
 		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4AECFFF216BA489A002403FD /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +117,16 @@
 			path = Tao;
 			sourceTree = "<group>";
 		};
+		4AA44E61176B0C7800EF33C6 /* PopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				4AA44E62176B0C7800EF33C6 /* PopoverView.h */,
+				4AA44E63176B0C7800EF33C6 /* PopoverView.m */,
+				4AA44E64176B0C7800EF33C6 /* PopoverView_Configuration.h */,
+			);
+			path = PopoverView;
+			sourceTree = "<group>";
+		};
 		9680955713CD344D0014D09A = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +169,7 @@
 		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
+				4AA44E61176B0C7800EF33C6 /* PopoverView */,
 				4A12A08D165BB900007AE86A /* Tao */,
 				4A12A045165B75FF007AE86A /* ZUUIRevealController */,
 				4A12A03D165B75C3007AE86A /* NSString+KTCommon.h */,
@@ -186,6 +203,8 @@
 				4A012016165E2DEF003C2328 /* TNibUtil.h in Headers */,
 				4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */,
 				4A98679316E449C200F3797D /* TDeviceUtil.h in Headers */,
+				4AA44E65176B0C7800EF33C6 /* PopoverView.h in Headers */,
+				4AA44E67176B0C7800EF33C6 /* PopoverView_Configuration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,7 @@
 				4A012017165E2DEF003C2328 /* TNibUtil.m in Sources */,
 				4A98679416E449C200F3797D /* TDeviceUtil.m in Sources */,
 				4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */,
+				4AA44E66176B0C7800EF33C6 /* PopoverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

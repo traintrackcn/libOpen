@@ -7,13 +7,14 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/traintrackcn/libOpen'
   s.author = { 'traintrackcn' => 'traintrackcn@gmail.com' }
  # s.source = { :git => 'git://github.com/lukeredpath/libPusher.git', :tag => 'v1.3' }
-  s.source_files = 'libOpen/**/{NS,SD,UI,T,G}*.{h,m}'
+  s.source_files = 'libOpen/**/{NS,SD,UI,T,G,Pop}*.{h,m}'
   s.requires_arc = true
   
   s.subspec 'ZUUIRevealController' do |zuui|
     zuui.source_files    = 'libOpen/ZUUIRevealController/*.{h,m}'
     zuui.requires_arc    = false
   end
+  
 
  # s.dependency 'SocketRocket'
  # s.framework = 'ImageIO'
