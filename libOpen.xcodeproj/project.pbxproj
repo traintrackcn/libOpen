@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A012016165E2DEF003C2328 /* TNibUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A012014165E2DEF003C2328 /* TNibUtil.h */; };
 		4A012017165E2DEF003C2328 /* TNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A012015165E2DEF003C2328 /* TNibUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4A12A03B165B7562007AE86A /* NSData+Base64Aware.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A039165B7562007AE86A /* NSData+Base64Aware.h */; };
-		4A12A03C165B7562007AE86A /* NSData+Base64Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12A03A165B7562007AE86A /* NSData+Base64Aware.m */; };
 		4A12A041165B75C3007AE86A /* NSString+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A03D165B75C3007AE86A /* NSString+KTCommon.h */; };
 		4A12A042165B75C3007AE86A /* NSString+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12A03E165B75C3007AE86A /* NSString+KTCommon.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4A12A043165B75C3007AE86A /* UIImage+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A03F165B75C3007AE86A /* UIImage+KTCommon.h */; };
@@ -27,33 +25,17 @@
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
 		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
-		968A602D13CEC60F00A9A7BE /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A602513CEC60F00A9A7BE /* Base64.h */; };
-		968A602E13CEC60F00A9A7BE /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 968A602613CEC60F00A9A7BE /* Base64.m */; };
-		968A602F13CEC60F00A9A7BE /* NSData-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A602713CEC60F00A9A7BE /* NSData-AES.h */; };
-		968A603013CEC60F00A9A7BE /* NSData-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 968A602813CEC60F00A9A7BE /* NSData-AES.m */; };
-		968A603113CEC60F00A9A7BE /* NSFileManager-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A602913CEC60F00A9A7BE /* NSFileManager-AES.h */; };
-		968A603213CEC60F00A9A7BE /* NSFileManager-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 968A602A13CEC60F00A9A7BE /* NSFileManager-AES.m */; };
-		968A603313CEC60F00A9A7BE /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 968A602B13CEC60F00A9A7BE /* rijndael.c */; };
-		968A603413CEC60F00A9A7BE /* rijndael.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A602C13CEC60F00A9A7BE /* rijndael.h */; };
-		968A603813CEC64A00A9A7BE /* NSString_MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A603613CEC64A00A9A7BE /* NSString_MD5.h */; };
-		968A603913CEC64A00A9A7BE /* NSString_MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 968A603713CEC64A00A9A7BE /* NSString_MD5.m */; };
 		968A603D13CEC6D400A9A7BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A603C13CEC6D400A9A7BE /* CFNetwork.framework */; };
 		968A604313CEC89700A9A7BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604013CEC89600A9A7BE /* CoreGraphics.framework */; };
 		968A604413CEC89700A9A7BE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604113CEC89600A9A7BE /* Security.framework */; };
 		968A604513CEC89700A9A7BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604213CEC89600A9A7BE /* SystemConfiguration.framework */; };
 		968A604713CEC8E200A9A7BE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604613CEC8E200A9A7BE /* MobileCoreServices.framework */; };
 		968A604D13CECCC600A9A7BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604C13CECCC600A9A7BE /* UIKit.framework */; };
-		96C68ED4148CC0C100DBC805 /* NSData+AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C68ED0148CC0C100DBC805 /* NSData+AESCrypt.h */; };
-		96C68ED5148CC0C100DBC805 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C68ED1148CC0C100DBC805 /* NSData+AESCrypt.m */; };
-		96C68ED6148CC0C100DBC805 /* NSString+AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C68ED2148CC0C100DBC805 /* NSString+AESCrypt.h */; };
-		96C68ED7148CC0C100DBC805 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C68ED3148CC0C100DBC805 /* NSString+AESCrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A012014165E2DEF003C2328 /* TNibUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNibUtil.h; sourceTree = "<group>"; };
 		4A012015165E2DEF003C2328 /* TNibUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNibUtil.m; sourceTree = "<group>"; };
-		4A12A039165B7562007AE86A /* NSData+Base64Aware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Aware.h"; sourceTree = "<group>"; };
-		4A12A03A165B7562007AE86A /* NSData+Base64Aware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Aware.m"; sourceTree = "<group>"; };
 		4A12A03D165B75C3007AE86A /* NSString+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KTCommon.h"; sourceTree = "<group>"; };
 		4A12A03E165B75C3007AE86A /* NSString+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTCommon.m"; sourceTree = "<group>"; };
 		4A12A03F165B75C3007AE86A /* UIImage+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KTCommon.h"; sourceTree = "<group>"; };
@@ -73,16 +55,6 @@
 		9680956513CD344D0014D09A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9680956913CD344D0014D09A /* libOpen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
 		9680957013CD344E0014D09A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		968A602513CEC60F00A9A7BE /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		968A602613CEC60F00A9A7BE /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
-		968A602713CEC60F00A9A7BE /* NSData-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-AES.h"; sourceTree = "<group>"; };
-		968A602813CEC60F00A9A7BE /* NSData-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-AES.m"; sourceTree = "<group>"; };
-		968A602913CEC60F00A9A7BE /* NSFileManager-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager-AES.h"; sourceTree = "<group>"; };
-		968A602A13CEC60F00A9A7BE /* NSFileManager-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager-AES.m"; sourceTree = "<group>"; };
-		968A602B13CEC60F00A9A7BE /* rijndael.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rijndael.c; sourceTree = "<group>"; };
-		968A602C13CEC60F00A9A7BE /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
-		968A603613CEC64A00A9A7BE /* NSString_MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_MD5.h; sourceTree = "<group>"; };
-		968A603713CEC64A00A9A7BE /* NSString_MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_MD5.m; sourceTree = "<group>"; };
 		968A603C13CEC6D400A9A7BE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		968A603E13CEC72200A9A7BE /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		968A604013CEC89600A9A7BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,10 +63,6 @@
 		968A604613CEC8E200A9A7BE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		968A604813CEC90A00A9A7BE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		968A604C13CECCC600A9A7BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		96C68ED0148CC0C100DBC805 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
-		96C68ED1148CC0C100DBC805 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
-		96C68ED2148CC0C100DBC805 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
-		96C68ED3148CC0C100DBC805 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 		A722E962165CC0700025A614 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -191,11 +159,6 @@
 				4A12A03E165B75C3007AE86A /* NSString+KTCommon.m */,
 				4A12A03F165B75C3007AE86A /* UIImage+KTCommon.h */,
 				4A12A040165B75C3007AE86A /* UIImage+KTCommon.m */,
-				4A12A039165B7562007AE86A /* NSData+Base64Aware.h */,
-				4A12A03A165B7562007AE86A /* NSData+Base64Aware.m */,
-				96C68ECF148CC0C100DBC805 /* AESCrypt */,
-				968A603513CEC64A00A9A7BE /* MD5 */,
-				968A602413CEC60F00A9A7BE /* Base64 */,
 				9680956813CD344D0014D09A /* Supporting Files */,
 			);
 			path = libOpen;
@@ -209,41 +172,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		968A602413CEC60F00A9A7BE /* Base64 */ = {
-			isa = PBXGroup;
-			children = (
-				968A602513CEC60F00A9A7BE /* Base64.h */,
-				968A602613CEC60F00A9A7BE /* Base64.m */,
-				968A602713CEC60F00A9A7BE /* NSData-AES.h */,
-				968A602813CEC60F00A9A7BE /* NSData-AES.m */,
-				968A602913CEC60F00A9A7BE /* NSFileManager-AES.h */,
-				968A602A13CEC60F00A9A7BE /* NSFileManager-AES.m */,
-				968A602B13CEC60F00A9A7BE /* rijndael.c */,
-				968A602C13CEC60F00A9A7BE /* rijndael.h */,
-			);
-			path = Base64;
-			sourceTree = "<group>";
-		};
-		968A603513CEC64A00A9A7BE /* MD5 */ = {
-			isa = PBXGroup;
-			children = (
-				968A603613CEC64A00A9A7BE /* NSString_MD5.h */,
-				968A603713CEC64A00A9A7BE /* NSString_MD5.m */,
-			);
-			path = MD5;
-			sourceTree = "<group>";
-		};
-		96C68ECF148CC0C100DBC805 /* AESCrypt */ = {
-			isa = PBXGroup;
-			children = (
-				96C68ED0148CC0C100DBC805 /* NSData+AESCrypt.h */,
-				96C68ED1148CC0C100DBC805 /* NSData+AESCrypt.m */,
-				96C68ED2148CC0C100DBC805 /* NSString+AESCrypt.h */,
-				96C68ED3148CC0C100DBC805 /* NSString+AESCrypt.m */,
-			);
-			path = AESCrypt;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -251,14 +179,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968A602D13CEC60F00A9A7BE /* Base64.h in Headers */,
-				968A602F13CEC60F00A9A7BE /* NSData-AES.h in Headers */,
-				968A603113CEC60F00A9A7BE /* NSFileManager-AES.h in Headers */,
-				968A603413CEC60F00A9A7BE /* rijndael.h in Headers */,
-				968A603813CEC64A00A9A7BE /* NSString_MD5.h in Headers */,
-				96C68ED4148CC0C100DBC805 /* NSData+AESCrypt.h in Headers */,
-				96C68ED6148CC0C100DBC805 /* NSString+AESCrypt.h in Headers */,
-				4A12A03B165B7562007AE86A /* NSData+Base64Aware.h in Headers */,
 				4A12A041165B75C3007AE86A /* NSString+KTCommon.h in Headers */,
 				4A12A043165B75C3007AE86A /* UIImage+KTCommon.h in Headers */,
 				4A12A04A165B75FF007AE86A /* ZUUIRevealController.h in Headers */,
@@ -330,14 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968A602E13CEC60F00A9A7BE /* Base64.m in Sources */,
-				968A603013CEC60F00A9A7BE /* NSData-AES.m in Sources */,
-				968A603213CEC60F00A9A7BE /* NSFileManager-AES.m in Sources */,
-				968A603313CEC60F00A9A7BE /* rijndael.c in Sources */,
-				968A603913CEC64A00A9A7BE /* NSString_MD5.m in Sources */,
-				96C68ED5148CC0C100DBC805 /* NSData+AESCrypt.m in Sources */,
-				96C68ED7148CC0C100DBC805 /* NSString+AESCrypt.m in Sources */,
-				4A12A03C165B7562007AE86A /* NSData+Base64Aware.m in Sources */,
 				4A12A042165B75C3007AE86A /* NSString+KTCommon.m in Sources */,
 				4A12A044165B75C3007AE86A /* UIImage+KTCommon.m in Sources */,
 				4A12A04B165B75FF007AE86A /* ZUUIRevealController.m in Sources */,
