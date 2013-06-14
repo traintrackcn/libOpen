@@ -9,6 +9,12 @@ Pod::Spec.new do |s|
  # s.source = { :git => 'git://github.com/lukeredpath/libPusher.git', :tag => 'v1.3' }
   s.source_files = 'libOpen/**/{NS,SD,UI,T,G,ZU}*.{h,m}'
   s.requires_arc = true
+  
+  s.subspec 'ZUUIRevealController' do |zuui|
+    zuui.source_files    = '*.{h,m}'
+    zuui.requires_arc    = false
+  end
+
  # s.dependency 'SocketRocket'
  # s.framework = 'ImageIO'
 end
