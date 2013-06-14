@@ -26,8 +26,6 @@
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
 		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		96690D96140736B200921954 /* CustomBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 96690D94140736B200921954 /* CustomBadge.h */; };
-		96690D97140736B200921954 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 96690D95140736B200921954 /* CustomBadge.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
 		968A602D13CEC60F00A9A7BE /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 968A602513CEC60F00A9A7BE /* Base64.h */; };
 		968A602E13CEC60F00A9A7BE /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 968A602613CEC60F00A9A7BE /* Base64.m */; };
@@ -71,8 +69,6 @@
 		4AA44E60176AF8CA00EF33C6 /* libOpen.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOpen.podspec; sourceTree = "<group>"; };
 		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4AECFFF216BA489A002403FD /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
-		96690D94140736B200921954 /* CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
-		96690D95140736B200921954 /* CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680956513CD344D0014D09A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9680956913CD344D0014D09A /* libOpen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
@@ -147,15 +143,6 @@
 			path = Tao;
 			sourceTree = "<group>";
 		};
-		96690D93140736B200921954 /* CustomBadge */ = {
-			isa = PBXGroup;
-			children = (
-				96690D94140736B200921954 /* CustomBadge.h */,
-				96690D95140736B200921954 /* CustomBadge.m */,
-			);
-			path = CustomBadge;
-			sourceTree = "<group>";
-		};
 		9680955713CD344D0014D09A = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +194,6 @@
 				4A12A039165B7562007AE86A /* NSData+Base64Aware.h */,
 				4A12A03A165B7562007AE86A /* NSData+Base64Aware.m */,
 				96C68ECF148CC0C100DBC805 /* AESCrypt */,
-				96690D93140736B200921954 /* CustomBadge */,
 				968A603513CEC64A00A9A7BE /* MD5 */,
 				968A602413CEC60F00A9A7BE /* Base64 */,
 				9680956813CD344D0014D09A /* Supporting Files */,
@@ -270,7 +256,6 @@
 				968A603113CEC60F00A9A7BE /* NSFileManager-AES.h in Headers */,
 				968A603413CEC60F00A9A7BE /* rijndael.h in Headers */,
 				968A603813CEC64A00A9A7BE /* NSString_MD5.h in Headers */,
-				96690D96140736B200921954 /* CustomBadge.h in Headers */,
 				96C68ED4148CC0C100DBC805 /* NSData+AESCrypt.h in Headers */,
 				96C68ED6148CC0C100DBC805 /* NSString+AESCrypt.h in Headers */,
 				4A12A03B165B7562007AE86A /* NSData+Base64Aware.h in Headers */,
@@ -350,7 +335,6 @@
 				968A603213CEC60F00A9A7BE /* NSFileManager-AES.m in Sources */,
 				968A603313CEC60F00A9A7BE /* rijndael.c in Sources */,
 				968A603913CEC64A00A9A7BE /* NSString_MD5.m in Sources */,
-				96690D97140736B200921954 /* CustomBadge.m in Sources */,
 				96C68ED5148CC0C100DBC805 /* NSData+AESCrypt.m in Sources */,
 				96C68ED7148CC0C100DBC805 /* NSString+AESCrypt.m in Sources */,
 				4A12A03C165B7562007AE86A /* NSData+Base64Aware.m in Sources */,
