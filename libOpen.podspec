@@ -20,14 +20,14 @@ Pod::Spec.new do |s|
     t.requires_arc    = true
   end
   
-  s.subspec 'CommonARC' do |c|
-    c.source_files    = 'libOpen/CommonARC/*.{h,m}'
-    c.requires_arc    = true
+  s.subspec 'CommonARC' do |cArc|
+    cArc.source_files    = 'libOpen/CommonARC/*.{h,m}'
+    cArc.requires_arc    = true
   end
   
-  s.subspec 'CommonNoARC' do |c|
-    c.source_files    = 'libOpen/CommonNoARC/*.{h,m}'
-    c.requires_arc    = false
+  s.subspec 'CommonNoARC' do |cNoArc|
+    cNoArc.source_files    = 'libOpen/CommonNoARC/*.{h,m}'
+    cNoArc.requires_arc    = false
   end
   
 
