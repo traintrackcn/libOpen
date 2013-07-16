@@ -10,16 +10,10 @@
 #import "QTreeLeaf.h"
 
 
-enum {
-    QuadrantUnavalible = -1,
-    QuadrantNorthEast = 0,          //Quadrant 1
-    QuadrantNorthWest = 1,          //Quadrant 2
-    QuadrantSouthWest = 2,          //Quadrant 3
-    QuadrantSouthEast = 3              //Quadrant 4
-};
+
 
 @interface QTree(){
-    NSMutableArray *leafs;
+    
     NSArray *nodes;
 }
 
@@ -32,7 +26,7 @@ enum {
     if (self) {
         [self setLevel:level];
         [self setFrame:frame];
-        leafs = [NSMutableArray array];
+        _leafs = [NSMutableArray array];
     }
     return self;
 }
@@ -66,7 +60,13 @@ enum {
 }
 
 
++ (void)setTQTreeMaxLeafs:(int)maxLeafs{
+    TQTreeMaxLevels = maxLeafs;
+}
 
++ (void)setTQTreeMaxLevels:(int)maxLevels{
+    TQTreeMaxLevels = maxLevels;
+}
 
 #pragma mark - node methods
 
@@ -130,7 +130,7 @@ enum {
 }
 
 - (void)appendLeafToCurrentNode:(QTreeLeaf *)leaf{
-    [leafs addObject:leaf];
+    [_leafs addObject:leaf];
 }
 
 - (void)appendLeafToSubNode:(QTreeLeaf *)leaf{
@@ -148,15 +148,15 @@ enum {
 }
 
 - (void)rearrangeWhenOverCapacity{
-    if ([leafs count] <= TQTreeMaxLeafs) return;
+    if ([_leafs count] <= TQTreeMaxLeafs) return;
     if (_level >= TQTreeMaxLevels) return;
     
     [self subdivide];
     
     NSMutableArray *tmpLeafs = [NSMutableArray array];
     
-    for (int i=0; i<[leafs count]; i++) {
-        QTreeLeaf *leaf = [leafs objectAtIndex:i];
+    for (int i=0; i<[_leafs count]; i++) {
+        QTreeLeaf *leaf = [_leafs objectAtIndex:i];
         int quadrant = [self quadrant:[leaf frame]];
         if ([self isQuadrantAvailable:quadrant]) {
             QTree *node = [self node:quadrant];
@@ -167,7 +167,7 @@ enum {
     }
     
     //current node's leafs after subdividing
-    leafs = tmpLeafs;
+    _leafs = tmpLeafs;
     
 }
 
@@ -178,16 +178,16 @@ enum {
 /*
  * Return all objects that could collide with the given object
  */
-- (NSArray *)fetch:(CGRect)rect{
-    int quadrant = [self quadrant:rect];
+- (NSArray *)fetch:(CGRect)targetRect{
+    int quadrant = [self quadrant:targetRect];
     NSMutableArray *results;
     if ([self isQuadrantAvailable:quadrant] && [self hasNodes]) {
         QTree *node = [self node:quadrant];
-        NSArray *nodeLeafs = [node fetch:rect];
+        NSArray *nodeLeafs = [node fetch:targetRect];
         [results addObjectsFromArray:nodeLeafs] ;
     }
     
-    [results addObjectsFromArray:leafs];
+    [results addObjectsFromArray:_leafs];
     
     return results;
 }
@@ -201,7 +201,7 @@ enum {
 }
 
 - (void)clearLeafs{
-    leafs = [NSMutableArray array];
+    _leafs = [NSMutableArray array];
 }
 
 - (void)clearNodes{
