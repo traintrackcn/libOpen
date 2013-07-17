@@ -11,8 +11,6 @@
 		4A012017165E2DEF003C2328 /* TNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A012015165E2DEF003C2328 /* TNibUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4A12A091165BB900007AE86A /* GlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A08E165BB900007AE86A /* GlobalDefine.h */; };
 		4A1AE376164CE68300C12442 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */; };
-		4A7E3D6D1794E07E004CFD25 /* QTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7E3D6B1794E07E004CFD25 /* QTree.h */; };
-		4A7E3D6E1794E07E004CFD25 /* QTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E3D6C1794E07E004CFD25 /* QTree.m */; };
 		4A98679316E449C200F3797D /* TDeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A98679116E449C200F3797D /* TDeviceUtil.h */; };
 		4A98679416E449C200F3797D /* TDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A98679216E449C200F3797D /* TDeviceUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
@@ -44,10 +42,6 @@
 		4A012015165E2DEF003C2328 /* TNibUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNibUtil.m; sourceTree = "<group>"; };
 		4A12A08E165BB900007AE86A /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		4A7E3D6B1794E07E004CFD25 /* QTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTree.h; sourceTree = "<group>"; };
-		4A7E3D6C1794E07E004CFD25 /* QTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTree.m; sourceTree = "<group>"; };
-		4A7E3D6F17952414004CFD25 /* QTreeLeaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTreeLeaf.h; sourceTree = "<group>"; };
-		4A7E3D7017952414004CFD25 /* QTreeLeaf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTreeLeaf.m; sourceTree = "<group>"; };
 		4A98679116E449C200F3797D /* TDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDeviceUtil.h; sourceTree = "<group>"; };
 		4A98679216E449C200F3797D /* TDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDeviceUtil.m; sourceTree = "<group>"; };
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -105,7 +99,6 @@
 		4A12A08D165BB900007AE86A /* Tao */ = {
 			isa = PBXGroup;
 			children = (
-				4A7E3D6A1794E050004CFD25 /* QTree */,
 				4A012014165E2DEF003C2328 /* TNibUtil.h */,
 				4A012015165E2DEF003C2328 /* TNibUtil.m */,
 				4A12A08E165BB900007AE86A /* GlobalDefine.h */,
@@ -115,17 +108,6 @@
 				4A98679216E449C200F3797D /* TDeviceUtil.m */,
 			);
 			path = Tao;
-			sourceTree = "<group>";
-		};
-		4A7E3D6A1794E050004CFD25 /* QTree */ = {
-			isa = PBXGroup;
-			children = (
-				4A7E3D6B1794E07E004CFD25 /* QTree.h */,
-				4A7E3D6C1794E07E004CFD25 /* QTree.m */,
-				4A7E3D6F17952414004CFD25 /* QTreeLeaf.h */,
-				4A7E3D7017952414004CFD25 /* QTreeLeaf.m */,
-			);
-			name = QTree;
 			sourceTree = "<group>";
 		};
 		4AA44E68176B110100EF33C6 /* CommonARC */ = {
@@ -224,7 +206,6 @@
 				4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */,
 				4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */,
 				4AA44E74176B110100EF33C6 /* NSData+Base64Aware.h in Headers */,
-				4A7E3D6D1794E07E004CFD25 /* QTree.h in Headers */,
 				4AA44E7B176B16AB00EF33C6 /* UIDevice+IdentifierAddition.h in Headers */,
 				4AA44E7D176B16AB00EF33C6 /* NSString+MD5Addition.h in Headers */,
 			);
@@ -296,7 +277,6 @@
 				4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */,
 				4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */,
 				4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */,
-				4A7E3D6E1794E07E004CFD25 /* QTree.m in Sources */,
 				4AA44E75176B110100EF33C6 /* NSData+Base64Aware.m in Sources */,
 				4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */,
 				4AA44E7C176B16AB00EF33C6 /* UIDevice+IdentifierAddition.m in Sources */,
