@@ -31,24 +31,9 @@
 #ifdef DEBUG
 //    #define LOG_DEBUG(__format,__args...) LogMessageF(__FILE__, __LINE__, __FUNCTION__, @"debug", 0, @"%@",[NSString stringWithFormat:__format, ##__args])
 
-#define TLOG_DEBUG(__format,__args...) NSLog(@"%s:%d %@",__FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]);
+#define TLOG(__format,__args...) NSLog(@"%s:%d %@",__FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]);
 #else
-#define TLOG_DEBUG(__format, __args...)
-#endif
-
-#ifdef DEBUG
-//    #define LOG_INFO(__format,__args...) LogMessageF(__FILE__, __LINE__, __FUNCTION__, @"info", 0, @"%@",[NSString stringWithFormat:__format, ##__args])
-#define TLOG_INFO(__format,__args...) NSLog(@"%@",[NSString stringWithFormat:__format, ##__args])
-#else
-#define TLOG_INFO(__format, __args...)
-#endif
-
-
-#ifdef DEBUG
-//    #define LOG_ERROR(__format,__args...) LogMessageF(__FILE__, __LINE__, __FUNCTION__, @"error", 0, @"%@",[NSString stringWithFormat:__format, ##__args])
-#define TLOG_ERROR(__format,__args...) NSLog(@"%@",[NSString stringWithFormat:__format, ##__args])
-#else
-#define TLOG_ERROR(__format, __args...)
+#define TLOG(__format, __args...)
 #endif
 
 //#define LOG_TEST(__format,__args...) LogMessageF(__FILE__, __LINE__, __FUNCTION__, @"test", 0, @"%@",[NSString stringWithFormat:__format, ##__args])
