@@ -3,7 +3,7 @@
 //  og
 //
 //  Created by 2ViVe on 12-11-20.
-//  Copyright (c) 2012年 2ViVe. All rights reserved.
+//  Copyright (c) 2012 2ViVe. All rights reserved.
 //
 
 #import "TNibUtil.h"
