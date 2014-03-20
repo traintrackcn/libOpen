@@ -20,11 +20,7 @@
 		4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */; };
 		4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E6B176B110100EF33C6 /* UIImage+KTCommon.h */; };
 		4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */; };
-		4AA44E74176B110100EF33C6 /* NSData+Base64Aware.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E6E176B110100EF33C6 /* NSData+Base64Aware.h */; };
-		4AA44E75176B110100EF33C6 /* NSData+Base64Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6F176B110100EF33C6 /* NSData+Base64Aware.m */; };
 		4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */; };
-		4AA44E7B176B16AB00EF33C6 /* UIDevice+IdentifierAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E77176B16AB00EF33C6 /* UIDevice+IdentifierAddition.h */; };
-		4AA44E7C176B16AB00EF33C6 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E78176B16AB00EF33C6 /* UIDevice+IdentifierAddition.m */; };
 		4AA44E7D176B16AB00EF33C6 /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */; };
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
 		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -51,11 +47,7 @@
 		4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTCommon.m"; sourceTree = "<group>"; };
 		4AA44E6B176B110100EF33C6 /* UIImage+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KTCommon.h"; sourceTree = "<group>"; };
 		4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KTCommon.m"; sourceTree = "<group>"; };
-		4AA44E6E176B110100EF33C6 /* NSData+Base64Aware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Aware.h"; sourceTree = "<group>"; };
-		4AA44E6F176B110100EF33C6 /* NSData+Base64Aware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Aware.m"; sourceTree = "<group>"; };
 		4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
-		4AA44E77176B16AB00EF33C6 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
-		4AA44E78176B16AB00EF33C6 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
 		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4AECFFF216BA489A002403FD /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
@@ -126,10 +118,6 @@
 			children = (
 				4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */,
 				4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */,
-				4AA44E77176B16AB00EF33C6 /* UIDevice+IdentifierAddition.h */,
-				4AA44E78176B16AB00EF33C6 /* UIDevice+IdentifierAddition.m */,
-				4AA44E6E176B110100EF33C6 /* NSData+Base64Aware.h */,
-				4AA44E6F176B110100EF33C6 /* NSData+Base64Aware.m */,
 			);
 			path = CommonNoARC;
 			sourceTree = "<group>";
@@ -205,8 +193,6 @@
 				4A98679316E449C200F3797D /* TDeviceUtil.h in Headers */,
 				4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */,
 				4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */,
-				4AA44E74176B110100EF33C6 /* NSData+Base64Aware.h in Headers */,
-				4AA44E7B176B16AB00EF33C6 /* UIDevice+IdentifierAddition.h in Headers */,
 				4AA44E7D176B16AB00EF33C6 /* NSString+MD5Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +263,7 @@
 				4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */,
 				4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */,
 				4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */,
-				4AA44E75176B110100EF33C6 /* NSData+Base64Aware.m in Sources */,
 				4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */,
-				4AA44E7C176B16AB00EF33C6 /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
