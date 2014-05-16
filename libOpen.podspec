@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'libOpen'
-  s.version = '0.1.2'
-  s.platform = :ios, '5.0'
+  s.version = '0.1.2.1'
+  s.platform = :ios, '6.0'
   s.license = 'MIT'
   s.summary = 'An Objective-C library'
   s.homepage = 'https://github.com/traintrackcn/libOpen'
