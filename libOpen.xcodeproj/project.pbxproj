@@ -18,6 +18,8 @@
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
+		4AA2E7771929982A00026297 /* AGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2E7751929982A00026297 /* AGModel.m */; };
+		4AA2E7781929982A00026297 /* AGModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA2E7761929982A00026297 /* AGModel.h */; };
 		4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E69176B110100EF33C6 /* NSString+KTCommon.h */; };
 		4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */; };
 		4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E6B176B110100EF33C6 /* UIImage+KTCommon.h */; };
@@ -46,6 +48,8 @@
 		4A98679216E449C200F3797D /* TDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDeviceUtil.m; sourceTree = "<group>"; };
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4A9867D016E44D3400F3797D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4AA2E7751929982A00026297 /* AGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGModel.m; sourceTree = "<group>"; };
+		4AA2E7761929982A00026297 /* AGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGModel.h; sourceTree = "<group>"; };
 		4AA44E60176AF8CA00EF33C6 /* libOpen.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOpen.podspec; sourceTree = "<group>"; };
 		4AA44E69176B110100EF33C6 /* NSString+KTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KTCommon.h"; sourceTree = "<group>"; };
 		4AA44E6A176B110100EF33C6 /* NSString+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTCommon.m"; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		4A12A08D165BB900007AE86A /* Tao */ = {
 			isa = PBXGroup;
 			children = (
+				4AA2E7751929982A00026297 /* AGModel.m */,
+				4AA2E7761929982A00026297 /* AGModel.h */,
 				4A4D1B711925A57700CDFB62 /* DSValueUtil.h */,
 				4A4D1B721925A57700CDFB62 /* DSValueUtil.m */,
 				4A012014165E2DEF003C2328 /* TNibUtil.h */,
@@ -200,6 +206,7 @@
 				4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */,
 				4A4D1B731925A57700CDFB62 /* DSValueUtil.h in Headers */,
 				4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */,
+				4AA2E7781929982A00026297 /* AGModel.h in Headers */,
 				4AA44E7D176B16AB00EF33C6 /* NSString+MD5Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +277,7 @@
 				4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */,
 				4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */,
 				4A4D1B741925A57700CDFB62 /* DSValueUtil.m in Sources */,
+				4AA2E7771929982A00026297 /* AGModel.m in Sources */,
 				4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */,
 				4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */,
 			);
