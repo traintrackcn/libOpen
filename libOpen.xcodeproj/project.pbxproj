@@ -28,6 +28,8 @@
 		4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */; };
 		4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */; };
 		4AA44E7D176B16AB00EF33C6 /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */; };
+		4ACCEE16196238FC00CCB48F /* DSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACCEE14196238FC00CCB48F /* DSImage.h */; };
+		4ACCEE17196238FC00CCB48F /* DSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCEE15196238FC00CCB48F /* DSImage.m */; };
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
 		4AECFFF416BA489A002403FD /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECFFF216BA489A002403FD /* TRootViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
@@ -61,6 +63,8 @@
 		4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KTCommon.m"; sourceTree = "<group>"; };
 		4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
 		4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		4ACCEE14196238FC00CCB48F /* DSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSImage.h; sourceTree = "<group>"; };
+		4ACCEE15196238FC00CCB48F /* DSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSImage.m; sourceTree = "<group>"; };
 		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4AECFFF216BA489A002403FD /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +107,8 @@
 		4A12A08D165BB900007AE86A /* Tao */ = {
 			isa = PBXGroup;
 			children = (
+				4ACCEE14196238FC00CCB48F /* DSImage.h */,
+				4ACCEE15196238FC00CCB48F /* DSImage.m */,
 				4A9EC7391941380C008A9A9F /* DSDraw.h */,
 				4A9EC73A1941380C008A9A9F /* DSDraw.m */,
 				4AA2E7751929982A00026297 /* AGModel.m */,
@@ -210,6 +216,7 @@
 				4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */,
 				4A98679316E449C200F3797D /* TDeviceUtil.h in Headers */,
 				4AA44E70176B110100EF33C6 /* NSString+KTCommon.h in Headers */,
+				4ACCEE16196238FC00CCB48F /* DSImage.h in Headers */,
 				4A9EC73B1941380C008A9A9F /* DSDraw.h in Headers */,
 				4A4D1B731925A57700CDFB62 /* DSValueUtil.h in Headers */,
 				4AA44E72176B110100EF33C6 /* UIImage+KTCommon.h in Headers */,
@@ -285,6 +292,7 @@
 				4AA44E71176B110100EF33C6 /* NSString+KTCommon.m in Sources */,
 				4A9EC73C1941380C008A9A9F /* DSDraw.m in Sources */,
 				4A4D1B741925A57700CDFB62 /* DSValueUtil.m in Sources */,
+				4ACCEE17196238FC00CCB48F /* DSImage.m in Sources */,
 				4AA2E7771929982A00026297 /* AGModel.m in Sources */,
 				4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */,
 				4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */,
