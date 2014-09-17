@@ -7,7 +7,6 @@
 //
 
 #import "DSValueUtil.h"
-#import "AGModel.h"
 
 @implementation DSValueUtil
 
@@ -31,9 +30,8 @@
 }
 
 + (BOOL)isEmptyString:(NSString *)value{
-    if ([value isEqualToString:@""]) {
-        return YES;
-    }
+    if ([DSValueUtil isNotAvailable:value]) return YES;
+    if ([value isEqualToString:@""]) return YES;
     return NO;
 }
 

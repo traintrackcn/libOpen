@@ -10,6 +10,7 @@
 
 @interface DSImage : NSObject
 
++ (UIImage *) imageWithView:(UIView *)view;
 
 //+ (UIImage *)ipMaskedImageNamed:(NSString *)name color:(UIColor *)color;
 + (UIImage *)image:(UIImage *)image withMaskColor:(UIColor *)color;
@@ -21,5 +22,7 @@
 + (NSString *)smallImageUrl:(NSString *)urlStr;
 
 + (BOOL)isImageUrlAvailableFromUrls:(NSArray *)urls;
+
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 
 @end

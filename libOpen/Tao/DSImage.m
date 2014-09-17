@@ -7,13 +7,14 @@
 //
 
 #import "DSImage.h"
+#import "DSHostSettingManager.h"
+#import "AGServer.h"
 
 @implementation DSImage
 
 + (UIImage *)rectangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor{
     CGFloat scale = 1.0;
-    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-        ([UIScreen mainScreen].scale == 2.0))  scale = 2.0;
+    if ([DSDeviceUtil isRetina])  scale = 2.0;
     UIGraphicsBeginImageContextWithOptions(size, YES, scale);
 	[fillColor setFill];
 	CGRect rect = CGRectMake(0, 0,size.width *scale, size.height*scale);
@@ -25,8 +26,7 @@
 
 + (UIImage *)circleWithSize:(CGSize)size fillColor:(UIColor *)fillColor{
     CGFloat scale = 1.0;
-    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-        ([UIScreen mainScreen].scale == 2.0))   scale = 2.0;
+    if ([DSDeviceUtil isRetina])  scale = 2.0;
     UIGraphicsBeginImageContextWithOptions(size, NO, scale);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
 	[fillColor setFill];
@@ -57,9 +57,10 @@
 //    TLOG(@"urlStr before -> %@", urlStr);
     //https://www.organogold.com/upload/image/1/large_f9efae0e-0497-4c99-ae41-51e778ced6b9.jpg
     
+    NSString *serverUrl = [DSHostSettingManager selectedServer].httpUrlWithoutExtension;
     //TEMPORARY SOLUTION
     if ([urlStr rangeOfString:@"http"].location == NSNotFound) {
-        urlStr = [NSString stringWithFormat:@"http://199.27.105.132:11442%@",urlStr];
+        urlStr = [NSString stringWithFormat:@"%@%@", serverUrl,urlStr];
     }
     
     NSMutableArray *arr = [[urlStr componentsSeparatedByString:@"/"] mutableCopy];
@@ -171,6 +172,31 @@
     return result;
 }
 
+
++ (UIImage *) imageWithView:(UIView *)view{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
+
+
+#pragma mark - resize image
+
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    //UIGraphicsBeginImageContext(newSize);
+    // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
+    // Pass 1.0 to force exact pixel size.
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 
 @end

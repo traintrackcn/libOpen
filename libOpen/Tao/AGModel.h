@@ -8,13 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AGModel : NSObject
+@interface AGModel : NSObject <NSCoding>
+
++ (instancetype)instance;
+
+@property (nonatomic, strong) NSString *keyForSavingToDisk;
 
 - (id)initWithRaw:(id)raw;
 - (void)updateWithRaw:(id)raw;
+- (void)saveToDisk;
+- (void)removeFromDisk;
+- (NSString *)className;
 
-@property (nonatomic, strong) NSString *identifier;
-@property (nonatomic, strong) NSString *name;
 
+//- (void)setString:(NSString *)string forProperty:(id)property;
 
 @end
