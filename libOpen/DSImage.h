@@ -25,4 +25,9 @@
 
 + (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 
+
++ (NSString *)setImageHost:(NSString *)imageHost;
+
+@property (nonatomic, strong) NSString *imageHost;
+
 @end

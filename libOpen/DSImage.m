@@ -8,8 +8,11 @@
 
 #import "DSImage.h"
 #import "DSDeviceUtil.h"
+#import "NSObject+Singleton.h"
 //#import "DSHostSettingManager.h"
 //#import "AGServer.h"
+
+NSString *DSImageHost;
 
 @implementation DSImage
 
@@ -59,7 +62,7 @@
     //https://www.organogold.com/upload/image/1/large_f9efae0e-0497-4c99-ae41-51e778ced6b9.jpg
     
     //    NSString *serverUrl = [DSHostSettingManager selectedServer].httpUrlWithoutExtension;
-    NSString *serverUrl = @"xxx";
+    NSString *serverUrl = [DSImage singleton].imageHost;
     //TEMPORARY SOLUTION
     if ([urlStr rangeOfString:@"http"].location == NSNotFound) {
         urlStr = [NSString stringWithFormat:@"%@%@", serverUrl,urlStr];
@@ -109,7 +112,9 @@
 //    return retImage;
 //}
 
-
++ (NSString *)setImageHost:(NSString *)imageHost{
+    DSImageHost = imageHost;
+}
 
 
 
