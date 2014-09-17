@@ -28,6 +28,8 @@
 		4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */; };
 		4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */; };
 		4AA44E7D176B16AB00EF33C6 /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */; };
+		4ABF216C19C9B26B00F730FF /* DSDeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF216A19C9B26B00F730FF /* DSDeviceUtil.h */; };
+		4ABF216D19C9B26B00F730FF /* DSDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF216B19C9B26B00F730FF /* DSDeviceUtil.m */; };
 		4ACCEE16196238FC00CCB48F /* DSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACCEE14196238FC00CCB48F /* DSImage.h */; };
 		4ACCEE17196238FC00CCB48F /* DSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCEE15196238FC00CCB48F /* DSImage.m */; };
 		4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AECFFF116BA489A002403FD /* TRootViewController.h */; };
@@ -63,6 +65,8 @@
 		4AA44E6C176B110100EF33C6 /* UIImage+KTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KTCommon.m"; sourceTree = "<group>"; };
 		4AA44E76176B16AB00EF33C6 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
 		4AA44E79176B16AB00EF33C6 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		4ABF216A19C9B26B00F730FF /* DSDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDeviceUtil.h; sourceTree = "<group>"; };
+		4ABF216B19C9B26B00F730FF /* DSDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSDeviceUtil.m; sourceTree = "<group>"; };
 		4ACCEE14196238FC00CCB48F /* DSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSImage.h; sourceTree = "<group>"; };
 		4ACCEE15196238FC00CCB48F /* DSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSImage.m; sourceTree = "<group>"; };
 		4AECFFF116BA489A002403FD /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				4AECFFF216BA489A002403FD /* TRootViewController.m */,
 				4A98679116E449C200F3797D /* TDeviceUtil.h */,
 				4A98679216E449C200F3797D /* TDeviceUtil.m */,
+				4ABF216A19C9B26B00F730FF /* DSDeviceUtil.h */,
+				4ABF216B19C9B26B00F730FF /* DSDeviceUtil.m */,
 			);
 			path = Tao;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A12A091165BB900007AE86A /* GlobalDefine.h in Headers */,
+				4ABF216C19C9B26B00F730FF /* DSDeviceUtil.h in Headers */,
 				4A012016165E2DEF003C2328 /* TNibUtil.h in Headers */,
 				4AECFFF316BA489A002403FD /* TRootViewController.h in Headers */,
 				4A98679316E449C200F3797D /* TDeviceUtil.h in Headers */,
@@ -295,6 +302,7 @@
 				4ACCEE17196238FC00CCB48F /* DSImage.m in Sources */,
 				4AA2E7771929982A00026297 /* AGModel.m in Sources */,
 				4AA44E73176B110100EF33C6 /* UIImage+KTCommon.m in Sources */,
+				4ABF216D19C9B26B00F730FF /* DSDeviceUtil.m in Sources */,
 				4AA44E7A176B16AB00EF33C6 /* NSString+MD5Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

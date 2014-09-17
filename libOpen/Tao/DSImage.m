@@ -7,8 +7,9 @@
 //
 
 #import "DSImage.h"
-#import "DSHostSettingManager.h"
-#import "AGServer.h"
+#import "DSDeviceUtil.h"
+//#import "DSHostSettingManager.h"
+//#import "AGServer.h"
 
 @implementation DSImage
 
@@ -54,10 +55,11 @@
 }
 
 + (NSString *)imageUrl:(NSString *)urlStr sizePrefix:(NSString *)sizePrefix{
-//    TLOG(@"urlStr before -> %@", urlStr);
+    //    TLOG(@"urlStr before -> %@", urlStr);
     //https://www.organogold.com/upload/image/1/large_f9efae0e-0497-4c99-ae41-51e778ced6b9.jpg
     
-    NSString *serverUrl = [DSHostSettingManager selectedServer].httpUrlWithoutExtension;
+    //    NSString *serverUrl = [DSHostSettingManager selectedServer].httpUrlWithoutExtension;
+    NSString *serverUrl = @"xxx";
     //TEMPORARY SOLUTION
     if ([urlStr rangeOfString:@"http"].location == NSNotFound) {
         urlStr = [NSString stringWithFormat:@"%@%@", serverUrl,urlStr];
@@ -81,27 +83,27 @@
 
 //+ (UIImage *)fillImageNamed:(NSString *)imageName withColor:(UIColor *)color{
 //    UIImage *image = [UIImage imageNamed:imageName];
-//    
+//
 //    UIGraphicsBeginImageContext(image.size);
-//    
+//
 //	// draw original image into the context
 //	[image drawAtPoint:CGPointZero];
-//    
+//
 //	// get the context for CoreGraphics
 //	CGContextRef ctx = UIGraphicsGetCurrentContext();
-//    
+//
 //	// set stroking color and draw circle
 //	[color setFill];
-//    
+//
 //	// make circle rect 5 px from border
 //	CGRect rect = CGRectMake(0, 0,
 //                             image.size.width,
 //                             image.size.height);
 //	CGContextFillRect(ctx, rect);
-//    
+//
 //	// make image out of bitmap context
 //	UIImage *retImage = UIGraphicsGetImageFromCurrentImageContext();
-//    
+//
 //	// free the context
 //	UIGraphicsEndImageContext();
 //    return retImage;
@@ -131,27 +133,27 @@
     return negativeImage;
 }
 
-    
-+ (UIImage *) image:(UIImage *)image withMaskColor:(UIColor *)color{
 
++ (UIImage *) image:(UIImage *)image withMaskColor:(UIColor *)color{
+    
     
     
     UIImage *formattedImage = [self imageWithWhiteBackgroundForImage:image];
-//    return formattedImage;
-//    TLOG(@"size %f %f", formattedImage.size.width, formattedImage.size.height);
+    //    return formattedImage;
+    //    TLOG(@"size %f %f", formattedImage.size.width, formattedImage.size.height);
     CGRect rect = {0, 0, formattedImage.size.width/image.scale, formattedImage.size.height/image.scale};
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [color setFill];
     UIRectFill(rect);
     UIImage *targetColorImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-//    return  [self imageWithWhiteBackgroundForImage:image];
-//    return targetColorImage;
-//    return formattedImage;
+    //    return  [self imageWithWhiteBackgroundForImage:image];
+    //    return targetColorImage;
+    //    return formattedImage;
     CGImageRef maskRef = [formattedImage CGImage];
-//    int bitsPerComponent                    = 1;
-//    int bitsPerPixel                        = bitsPerComponent * 1 ;
-//    int bytesPerRow                         = (CGImageGetWidth(maskRef) * bitsPerPixel);
+    //    int bitsPerComponent                    = 1;
+    //    int bitsPerPixel                        = bitsPerComponent * 1 ;
+    //    int bytesPerRow                         = (CGImageGetWidth(maskRef) * bitsPerPixel);
     
     
     CGImageRef maskcg = CGImageMaskCreate(CGImageGetWidth(maskRef),
@@ -165,7 +167,7 @@
     CGImageRef maskedcg = CGImageCreateWithMask([targetColorImage CGImage], maskcg);
     CGImageRelease(maskcg);
     
-        
+    
     UIImage *result = [UIImage imageWithCGImage:maskedcg scale:[image scale] orientation:[image imageOrientation]];
     CGImageRelease(maskedcg);
     
