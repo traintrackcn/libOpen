@@ -12,7 +12,6 @@
 //#import "DSHostSettingManager.h"
 //#import "AGServer.h"
 
-NSString *DSImageHost;
 
 @implementation DSImage
 
@@ -112,9 +111,7 @@ NSString *DSImageHost;
 //    return retImage;
 //}
 
-+ (NSString *)setImageHost:(NSString *)imageHost{
-    DSImageHost = imageHost;
-}
+
 
 
 
