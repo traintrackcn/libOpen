@@ -8,6 +8,8 @@
 
 #import "DSDeviceUtil.h"
 #import "DSValueUtil.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @implementation DSDeviceUtil
 

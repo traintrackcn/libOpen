@@ -29,9 +29,8 @@
 		4ABF219D19C9B72F00F730FF /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
 		4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218D19C9B72F00F730FF /* TRootViewController.m */; };
 		4ABF21A019C9B76000F730FF /* libOpen-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */; };
-		4ABF21A819C9BFFD00F730FF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF21A519C9BFFD00F730FF /* .gitignore */; };
-		4ABF21A919C9BFFD00F730FF /* NSObject+Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF21A619C9BFFD00F730FF /* NSObject+Singleton.h */; };
-		4ABF21AA19C9BFFD00F730FF /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF21A719C9BFFD00F730FF /* NSObject+Singleton.m */; };
+		4AD7D21019D111A900D7F178 /* NSObject+Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */; };
+		4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
 		968A603D13CEC6D400A9A7BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A603C13CEC6D400A9A7BE /* CFNetwork.framework */; };
 		968A604313CEC89700A9A7BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604013CEC89600A9A7BE /* CoreGraphics.framework */; };
@@ -63,9 +62,8 @@
 		4ABF218C19C9B72F00F730FF /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4ABF218D19C9B72F00F730FF /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
 		4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
-		4ABF21A519C9BFFD00F730FF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		4ABF21A619C9BFFD00F730FF /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Singleton.h"; sourceTree = "<group>"; };
-		4ABF21A719C9BFFD00F730FF /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Singleton.m"; sourceTree = "<group>"; };
+		4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Singleton.h"; sourceTree = "<group>"; };
+		4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Singleton.m"; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680956513CD344D0014D09A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9680957013CD344E0014D09A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -102,20 +100,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4ABF21A319C9BFFD00F730FF /* 3rd */ = {
+		4AD7D20C19D111A900D7F178 /* Shared3rd */ = {
 			isa = PBXGroup;
 			children = (
-				4ABF21A419C9BFFD00F730FF /* NSObject+Singleton */,
+				4AD7D20D19D111A900D7F178 /* NSObject+Singleton */,
 			);
-			path = 3rd;
+			path = Shared3rd;
 			sourceTree = "<group>";
 		};
-		4ABF21A419C9BFFD00F730FF /* NSObject+Singleton */ = {
+		4AD7D20D19D111A900D7F178 /* NSObject+Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				4ABF21A519C9BFFD00F730FF /* .gitignore */,
-				4ABF21A619C9BFFD00F730FF /* NSObject+Singleton.h */,
-				4ABF21A719C9BFFD00F730FF /* NSObject+Singleton.m */,
+				4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */,
+				4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */,
 			);
 			path = "NSObject+Singleton";
 			sourceTree = "<group>";
@@ -123,7 +120,7 @@
 		9680955713CD344D0014D09A = {
 			isa = PBXGroup;
 			children = (
-				4ABF21A319C9BFFD00F730FF /* 3rd */,
+				4AD7D20C19D111A900D7F178 /* Shared3rd */,
 				4A9867D016E44D3400F3797D /* QuartzCore.framework */,
 				4A9867CE16E44D2700F3797D /* CoreImage.framework */,
 				9680956713CD344D0014D09A /* libOpen */,
@@ -198,7 +195,7 @@
 				4ABF219D19C9B72F00F730FF /* TRootViewController.h in Headers */,
 				4ABF21A019C9B76000F730FF /* libOpen-Prefix.pch in Headers */,
 				4ABF218E19C9B72F00F730FF /* AGModel.h in Headers */,
-				4ABF21A919C9BFFD00F730FF /* NSObject+Singleton.h in Headers */,
+				4AD7D21019D111A900D7F178 /* NSObject+Singleton.h in Headers */,
 				4ABF219019C9B72F00F730FF /* DSDeviceUtil.h in Headers */,
 				4ABF219819C9B72F00F730FF /* GlobalDefine.h in Headers */,
 				4ABF219619C9B72F00F730FF /* DSValueUtil.h in Headers */,
@@ -256,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ABF21A819C9BFFD00F730FF /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +265,7 @@
 			files = (
 				4ABF219A19C9B72F00F730FF /* TDeviceUtil.m in Sources */,
 				4ABF219119C9B72F00F730FF /* DSDeviceUtil.m in Sources */,
-				4ABF21AA19C9BFFD00F730FF /* NSObject+Singleton.m in Sources */,
+				4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */,
 				4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */,
 				4ABF219519C9B72F00F730FF /* DSImage.m in Sources */,
 				4ABF218F19C9B72F00F730FF /* AGModel.m in Sources */,
@@ -301,7 +297,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +315,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
