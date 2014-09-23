@@ -202,22 +202,22 @@
 
 
 //iOS 5 only
-+ (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-    //    LOG_DEBUG(@"shouldAutorotateToInterfaceOrientation");
-    
-    //    if ([DSDeviceUtil isIPad]) {
-    //        [self resizeFrontC];
-    //        return YES;
-    //    }
-//    return NO;
-    
-    if ([DSDeviceUtil isIPad]) {
-        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ) return YES;
-        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)  return YES;
-        return NO;
-    }
-    
-    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
-}
+//+ (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+//    //    LOG_DEBUG(@"shouldAutorotateToInterfaceOrientation");
+//    
+//    //    if ([DSDeviceUtil isIPad]) {
+//    //        [self resizeFrontC];
+//    //        return YES;
+//    //    }
+////    return NO;
+//    
+//    if ([DSDeviceUtil isIPad]) {
+//        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ) return YES;
+//        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)  return YES;
+//        return NO;
+//    }
+//    
+//    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+//}
 
 @end
