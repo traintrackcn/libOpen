@@ -31,6 +31,8 @@
 		4ABF21A019C9B76000F730FF /* libOpen-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */; };
 		4AD7D21019D111A900D7F178 /* NSObject+Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */; };
 		4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */; };
+		4AD7D2E819D2BD5C00D7F178 /* AGAppUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */; };
+		4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
 		968A603D13CEC6D400A9A7BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A603C13CEC6D400A9A7BE /* CFNetwork.framework */; };
 		968A604313CEC89700A9A7BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604013CEC89600A9A7BE /* CoreGraphics.framework */; };
@@ -64,6 +66,8 @@
 		4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
 		4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Singleton.h"; sourceTree = "<group>"; };
 		4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Singleton.m"; sourceTree = "<group>"; };
+		4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAppUtil.h; sourceTree = "<group>"; };
+		4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAppUtil.m; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680956513CD344D0014D09A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9680957013CD344E0014D09A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -159,6 +163,8 @@
 		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
+				4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */,
+				4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */,
 				4ABF217D19C9B72F00F730FF /* AGModel.h */,
 				4ABF217E19C9B72F00F730FF /* AGModel.m */,
 				4ABF217F19C9B72F00F730FF /* DSDeviceUtil.h */,
@@ -188,6 +194,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD7D2E819D2BD5C00D7F178 /* AGAppUtil.h in Headers */,
 				4ABF219219C9B72F00F730FF /* DSDraw.h in Headers */,
 				4ABF219419C9B72F00F730FF /* DSImage.h in Headers */,
 				4ABF219919C9B72F00F730FF /* TDeviceUtil.h in Headers */,
@@ -268,6 +275,7 @@
 				4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */,
 				4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */,
 				4ABF219519C9B72F00F730FF /* DSImage.m in Sources */,
+				4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */,
 				4ABF218F19C9B72F00F730FF /* AGModel.m in Sources */,
 				4ABF219719C9B72F00F730FF /* DSValueUtil.m in Sources */,
 				4ABF219C19C9B72F00F730FF /* TNibUtil.m in Sources */,
@@ -333,7 +341,7 @@
 				GCC_PREFIX_HEADER = "libOpen/libOpen-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = "\"./libOpen\"/**";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,7 +364,7 @@
 				GCC_PREFIX_HEADER = "libOpen/libOpen-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = "\"./libOpen\"/**";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,6 +8,7 @@
 
 #import "AGModel.h"
 #import "DSValueUtil.h"
+#import "GlobalDefine.h"
 
 @implementation AGModel
 
