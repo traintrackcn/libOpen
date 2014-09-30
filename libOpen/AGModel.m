@@ -10,6 +10,13 @@
 #import "DSValueUtil.h"
 #import "GlobalDefine.h"
 
+
+@interface AGModel(){
+//    id raw;
+}
+
+@end
+
 @implementation AGModel
 
 
@@ -50,6 +57,7 @@
 - (id)initWithRaw:(NSDictionary *)raw{
     self = [super init];
     if (self) {
+        [self setRaw:raw];
         [self updateWithRaw:raw];
     }
     return self;
@@ -87,5 +95,43 @@
 //    
 //}
 
+#pragma mark - converter
+
+- (NSDate *)dateForKey:(NSString *)key{
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd"];
+    NSDate *d = [df dateFromString:[DSValueUtil toString:[self.raw objectForKey:key]]];
+//    [self setBirthDate:d];
+    return d;
+}
+
+- (NSString *)stringForKey:(NSString *)key{
+    return [DSValueUtil toString:[self.raw objectForKey:key]];
+}
+
+- (CGFloat)floatForKey:(NSString *)key{
+    return [[self.raw objectForKey:key] floatValue];
+}
+
+- (NSInteger)integerForKey:(NSString *)key{
+    return [[self.raw objectForKey:key] integerValue];
+}
+
+- (BOOL)isAvailableForKey:(NSString *)key{
+    return [DSValueUtil isAvailable:[self.raw objectForKey:key]];
+}
+
+//- (void)setStringForKey:(NSString *)key selector:(SEL)selector{
+//    if ([self isAvailableForKey:key]) {
+////        selector([self stringForKey:key]);
+////        SEL selector = NSSelectorFromString([NSString stringWithFormat:@"setName:"]);
+//        IMP imp = [self methodForSelector:selector];
+//        void (*func)(id, SEL) = (void *)imp;
+//        func(self, selector);
+////        [self performSelector:selector withObject:[self stringForKey:key]];
+//    }
+//    
+//}
 
 @end

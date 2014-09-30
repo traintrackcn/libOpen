@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface AGModel : NSObject <NSCoding>
 
 + (instancetype)instance;
 
 @property (nonatomic, strong) NSString *keyForSavingToDisk;
+@property (nonatomic, strong) id raw;
 
 - (id)initWithRaw:(id)raw;
 - (void)updateWithRaw:(id)raw;
@@ -20,7 +22,13 @@
 - (void)removeFromDisk;
 - (NSString *)className;
 
+#pragma mark - converter
+- (NSDate *)dateForKey:(NSString *)key;
+- (NSString *)stringForKey:(NSString *)key;
+- (CGFloat)floatForKey:(NSString *)key;
+- (NSInteger)integerForKey:(NSString *)key;
+- (BOOL)isAvailableForKey:(NSString *)key;
 
-//- (void)setString:(NSString *)string forProperty:(id)property;
+//- (void)setStringForKey:(NSString *)key selector:(SEL)selector;
 
 @end
