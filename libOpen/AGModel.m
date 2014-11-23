@@ -64,7 +64,7 @@
 }
 
 - (void)updateWithRaw:(id)raw{
-    
+    [self setRaw:raw];
 }
 
 #pragma mark - ops
@@ -99,9 +99,17 @@
 
 - (NSDate *)dateForKey:(NSString *)key{
     
+    NSString *value = [DSValueUtil toString:[self.raw objectForKey:key]];
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"yyyy-MM-dd"];
-    NSDate *d = [df dateFromString:[DSValueUtil toString:[self.raw objectForKey:key]]];
+
+    
+    if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"Z"].location != NSNotFound) {
+        value = [value componentsSeparatedByString:@"T"].firstObject;
+        [df setDateFormat:@"yyyy-MM-dd"];
+    }else{
+        [df setDateFormat:@"yyyy-MM-dd"];
+    }
+    NSDate *d = [df dateFromString:value];
 //    [self setBirthDate:d];
     return d;
 }
