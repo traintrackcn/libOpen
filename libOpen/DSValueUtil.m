@@ -22,7 +22,11 @@
 }
 
 + (BOOL)isNull:(id)value{
-    if ([value isEqual:[NSNull null]]) return YES;
+    @try {
+        if ([value isEqual:[NSNull null]]) return YES;
+    }@catch (NSException *exception) {
+//        TLOG(@"e -> %@", exception);
+    }
     return NO;
 }
 

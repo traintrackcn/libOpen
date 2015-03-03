@@ -18,10 +18,13 @@
     return [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey];
 }
 
-+ (NSString *)buildNumberText{
-    return [NSString stringWithFormat:@"Build %@", self.buildNumber];
++ (NSString *)textBuildNumberStyleForRemoteMonitor{
+    return [NSString stringWithFormat:@"b.%@", self.buildNumber];
 }
 
++ (NSString *)textBuildNumber{
+    return [NSString stringWithFormat:@"Build %@", self.buildNumber];
+}
 
 //+ (void)setPushNotificationToken:(NSString *)pushNotificationToken{
 //    [[NSUserDefaults standardUserDefaults] setObject:pushNotificationToken forKey:USER_DEFAULTS_KEY_PUSH_NOTIFICATION_TOKEN];

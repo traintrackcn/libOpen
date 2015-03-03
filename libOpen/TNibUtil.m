@@ -22,7 +22,7 @@ static TNibUtil *_instanceTNibUtil;
 
 + (TNibUtil *)instance{
     
-//    LOG_DEBUG(@"instance -> %@",_instanceDSViewControllerManager);
+//    TLOG(@"instance -> %@",_instanceDSViewControllerManager);
     
 	if(!_instanceTNibUtil){
 		_instanceTNibUtil = [[TNibUtil alloc] init];

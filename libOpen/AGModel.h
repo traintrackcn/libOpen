@@ -26,8 +26,11 @@
 - (NSDate *)dateForKey:(NSString *)key;
 - (NSString *)stringForKey:(NSString *)key;
 - (CGFloat)floatForKey:(NSString *)key;
+- (NSNumber *)numberForKey:(NSString *)key;
 - (NSInteger)integerForKey:(NSString *)key;
+- (BOOL)boolForKey:(NSString *)key;
 - (BOOL)isAvailableForKey:(NSString *)key;
+- (id)objectForKey:(NSString *)key;
 
 //- (void)setStringForKey:(NSString *)key selector:(SEL)selector;
 

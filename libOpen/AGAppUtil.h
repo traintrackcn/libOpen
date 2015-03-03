@@ -12,8 +12,8 @@
 
 + (NSString *)identifier;
 + (NSString *)buildNumber;
-+ (NSString *)buildNumberText;
-
++ (NSString *)textBuildNumberStyleForRemoteMonitor;
++ (NSString *)textBuildNumber;
 //+ (NSString *)pushNotificationToken;
 //+ (void)setPushNotificationToken:(NSString *)pushNotificationToken;
 

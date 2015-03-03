@@ -9,7 +9,8 @@
 #import "AGModel.h"
 #import "DSValueUtil.h"
 #import "GlobalDefine.h"
-
+#import "AGDateUtil.h"
+//#import "DSNumberUtil.h"
 
 @interface AGModel(){
 //    id raw;
@@ -98,32 +99,46 @@
 #pragma mark - converter
 
 - (NSDate *)dateForKey:(NSString *)key{
-    
     NSString *value = [DSValueUtil toString:[self.raw objectForKey:key]];
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-
-    
-    if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"Z"].location != NSNotFound) {
-        value = [value componentsSeparatedByString:@"T"].firstObject;
-        [df setDateFormat:@"yyyy-MM-dd"];
-    }else{
-        [df setDateFormat:@"yyyy-MM-dd"];
-    }
-    NSDate *d = [df dateFromString:value];
 //    [self setBirthDate:d];
-    return d;
+    return [AGDateUtil dateFromString:value];
 }
 
 - (NSString *)stringForKey:(NSString *)key{
     return [DSValueUtil toString:[self.raw objectForKey:key]];
 }
 
+//convert NSNumber to float will lose precision. e.g 1558038.94 -> 1558039
 - (CGFloat)floatForKey:(NSString *)key{
     return [[self.raw objectForKey:key] floatValue];
 }
 
+- (NSNumber *)numberForKey:(NSString *)key{
+    id object = [self objectForKey:key];
+    
+    NSNumber *num;
+    
+    if ([object isKindOfClass:[NSString class]]) {
+        num = [NSNumber numberWithDouble:[(NSString *)object doubleValue]];
+    }
+    
+    if ([object isKindOfClass:[NSNumber class]]) {
+        num = object;
+    }
+    
+    return num;
+}
+
+- (id)objectForKey:(NSString *)key{
+    return [self.raw objectForKey:key];
+}
+
 - (NSInteger)integerForKey:(NSString *)key{
-    return [[self.raw objectForKey:key] integerValue];
+    return [[self objectForKey:key] integerValue];
+}
+
+- (BOOL)boolForKey:(NSString *)key{
+    return [[self objectForKey:key] boolValue];
 }
 
 - (BOOL)isAvailableForKey:(NSString *)key{

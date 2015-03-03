@@ -41,6 +41,26 @@
     return img;
 }
 
++ (UIImage *)triangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor{
+    
+    CGFloat scale = 1.0;
+    if ([DSDeviceUtil isRetina])  scale = 2.0;
+    UIGraphicsBeginImageContextWithOptions(size, NO, scale);
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [fillColor setFill];
+    CGContextBeginPath(ctx);
+    CGContextMoveToPoint   (ctx, CGRectGetMidX(rect), CGRectGetMinY(rect));  // top
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMaxY(rect));  // mid right
+    CGContextAddLineToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));  // bottom left
+    CGContextClosePath(ctx);
+    
+    CGContextFillPath(ctx);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
 
 + (NSString *)largeImageUrl:(NSString *)urlStr{
     return [self imageUrl:urlStr sizePrefix:@"large"];
@@ -181,11 +201,35 @@
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     
+//    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
+
+    
     UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
     
     return img;
+}
+
++ (UIImage *)imageWithTransformedView:(UIView *)view{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
++ (UIImage *)imageWithImage:(UIImage *)image cropInRect:(CGRect)rect {
+    NSParameterAssert(image != nil);
+    if (CGPointEqualToPoint(CGPointZero, rect.origin) && CGSizeEqualToSize(rect.size, image.size)) {
+        return image;
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, image.scale);
+    [image drawAtPoint:(CGPoint){-rect.origin.x, -rect.origin.y}];
+    UIImage *croppedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return croppedImage;
 }
 
 

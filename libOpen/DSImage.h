@@ -10,20 +10,24 @@
 
 @interface DSImage : NSObject
 
-+ (UIImage *) imageWithView:(UIView *)view;
++ (UIImage *)imageWithView:(UIView *)view;
++ (UIImage *)imageWithTransformedView:(UIView *)view;
 
 //+ (UIImage *)ipMaskedImageNamed:(NSString *)name color:(UIColor *)color;
 + (UIImage *)image:(UIImage *)image withMaskColor:(UIColor *)color;
 //+ (UIImage *)fillImageNamed:(NSString *)imageName withColor:(UIColor *)color;
 + (UIImage *)rectangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
 + (UIImage *)circleWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
++ (UIImage *)triangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
 
 + (NSString *)largeImageUrl:(NSString *)urlStr;
 + (NSString *)smallImageUrl:(NSString *)urlStr;
 
 + (BOOL)isImageUrlAvailableFromUrls:(NSArray *)urls;
 
+//+ (UIImage *)imageWithLayer:(CALayer *)layer;
 + (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
++ (UIImage *)imageWithImage:(UIImage *)image cropInRect:(CGRect)rect;
 
 @property (nonatomic, strong) NSString *imageHost;
 

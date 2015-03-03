@@ -1,12 +1,15 @@
 
 //#import "LoggerClient.h"
 
-#define CURRENT_FUNCTION __PRETTY_FUNCTION__
+
+#define CURRENT_FUNCTION_NAME [NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__]
+
 
 #ifdef DEBUG
-#define TLOG(__format,__args...) NSLog(@"%s:%d %@",CURRENT_FUNCTION, __LINE__,[NSString stringWithFormat:__format, ##__args]);
+#define TLOG(__format,__args...) NSLog(@"%s:%d %@",__PRETTY_FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]);
 #else
-#define TLOG(__format, __args...)
+//#define TLOG(__format, __args...)
+#define TLOG(__format,__args...) NSLog(@"%s:%d %@",__PRETTY_FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]);
 #endif
 
 //#define LOG_TEST(__format,__args...) LogMessageF(__FILE__, __LINE__, __FUNCTION__, @"test", 0, @"%@",[NSString stringWithFormat:__format, ##__args])

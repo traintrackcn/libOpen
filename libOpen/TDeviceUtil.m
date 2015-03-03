@@ -71,7 +71,7 @@ static TDeviceUtil *____instanceTDeviceUtil;
         return NO;
     }
     
-    //    LOG_DEBUG(@"screen rect -> w:%f h:%f", size.width,size.height);
+    //    TLOG(@"screen rect -> w:%f h:%f", size.width,size.height);
     return YES;
 }
 

@@ -33,7 +33,7 @@
 
 
 + (void)test{
-//    LOG_DEBUG(@"model -> %@",[[UIDevice currentDevice] model]);
+//    TLOG(@"model -> %@",[[UIDevice currentDevice] model]);
 }
 
 + (BOOL)isIPad{
@@ -82,7 +82,7 @@
 //    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     
     // on iPhone orientation won't change with same settings
-//    LOG_DEBUG(@"deviceWidth orientation -> %d", orientation);
+//    TLOG(@"deviceWidth orientation -> %d", orientation);
     
 //    if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight){
 //        return size.height;
@@ -151,7 +151,7 @@
         return NO;
     }
     
-//    LOG_DEBUG(@"screen rect -> w:%f h:%f", size.width,size.height);
+//    TLOG(@"screen rect -> w:%f h:%f", size.width,size.height);
     return YES;
 }
 
@@ -165,6 +165,15 @@
 + (BOOL)iOS7AndAbove{
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) return YES;
     return NO;
+}
+
++ (BOOL)iOS8AndAbove{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) return YES;
+    return NO;
+}
+
++ (BOOL)isNotIOS8AndAbove{
+    return !self.iOS8AndAbove;
 }
 
 + (CGFloat)offsetOfUIViewInDifferentOS{
@@ -194,7 +203,7 @@
 
 //+ (BOOL)shouldAutorotate{
 //    UIDeviceOrientation toInterfaceOrientation = [[UIDevice currentDevice] orientation];
-//    LOG_DEBUG(@"shouldAutorotate -> %d", toInterfaceOrientation);
+//    TLOG(@"shouldAutorotate -> %d", toInterfaceOrientation);
 //    if ([DSDeviceUtil isIPad] && (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)  ){
 //        //        [self resizeFrontC];
 //        return YES;
@@ -205,7 +214,7 @@
 
 //iOS 5 only
 //+ (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-//    //    LOG_DEBUG(@"shouldAutorotateToInterfaceOrientation");
+//    //    TLOG(@"shouldAutorotateToInterfaceOrientation");
 //    
 //    //    if ([DSDeviceUtil isIPad]) {
 //    //        [self resizeFrontC];
