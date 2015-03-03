@@ -189,46 +189,4 @@
         return bRelease;
 }
 
-//rotation control
-
-//iOS 6 only
-
-+ (NSUInteger)supportedInterfaceOrientations{
-    if ([DSDeviceUtil isIPad]){
-        return UIInterfaceOrientationMaskLandscape;
-    }
-    
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-//+ (BOOL)shouldAutorotate{
-//    UIDeviceOrientation toInterfaceOrientation = [[UIDevice currentDevice] orientation];
-//    TLOG(@"shouldAutorotate -> %d", toInterfaceOrientation);
-//    if ([DSDeviceUtil isIPad] && (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)  ){
-//        //        [self resizeFrontC];
-//        return YES;
-//    }
-//    return NO;
-//}
-
-
-//iOS 5 only
-//+ (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-//    //    TLOG(@"shouldAutorotateToInterfaceOrientation");
-//    
-//    //    if ([DSDeviceUtil isIPad]) {
-//    //        [self resizeFrontC];
-//    //        return YES;
-//    //    }
-////    return NO;
-//    
-//    if ([DSDeviceUtil isIPad]) {
-//        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ) return YES;
-//        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)  return YES;
-//        return NO;
-//    }
-//    
-//    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
-//}
-
 @end
