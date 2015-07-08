@@ -59,8 +59,8 @@
     return @"";
 }
 
-+ (CGFloat)toFloat:(id)value{
-    if ([self isAvailable:value]) return [value floatValue];
++ (double)toFloat:(id)value{
+    if ([self isAvailable:value]) return [value doubleValue];
     return 0;
 }
 

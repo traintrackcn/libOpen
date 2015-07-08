@@ -32,7 +32,7 @@
 + (CGSize)deviceSize;
 + (CGRect)bounds;
 
-+ (NSUInteger)supportedInterfaceOrientations;
+//+ (NSUInteger)supportedInterfaceOrientations;
 //+ (BOOL)shouldAutorotate;
 //+ (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
 

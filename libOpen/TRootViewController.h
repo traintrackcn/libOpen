@@ -13,8 +13,8 @@
 }
 
 
-- (void)pushVC:(NSString *)name;
-- (void)presentVC:(NSString *)name;
+//- (void)pushVC:(NSString *)name;
+//- (void)presentVC:(NSString *)name;
 
 - (void)alertWithTitle:(NSString *)title message:(NSString *)msg;
 

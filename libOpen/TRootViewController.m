@@ -17,15 +17,15 @@
 
 
 
-- (void)pushVC:(NSString *)name{
-    UIViewController *vc = [TNibUtil instantiateObjectFromNibWithName:name];
-    [self pushViewController:vc animated:YES];
-}
+//- (void)pushVC:(NSString *)name{
+//    UIViewController *vc = [TNibUtil instantiateObjectFromNibWithName:name];
+//    [self pushViewController:vc animated:YES];
+//}
 
-- (void)presentVC:(NSString *)name{
-    UIViewController *vc = [TNibUtil instantiateObjectFromNibWithName:name];
-    [self presentViewController:vc animated:YES completion:nil];
-}
+//- (void)presentVC:(NSString *)name{
+//    UIViewController *vc = [TNibUtil instantiateObjectFromNibWithName:name];
+//    [self presentViewController:vc animated:YES completion:nil];
+//}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -137,19 +137,53 @@
     NSString *value = dateStr;
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     
+//    TLOG(@"origin-value -> %@", value);
     
-    if ([value rangeOfString:@"T"].location!=NSNotFound ) {
+    if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"."].location!=NSNotFound) {
 //        if ([value rangeOfString:@"Z"].location != NSNotFound){
-        value = [value componentsSeparatedByString:@"T"].firstObject;
+        NSArray *arr = [value componentsSeparatedByString:@"T"];
+        NSArray *arr1 = [[arr objectAtIndex:1] componentsSeparatedByString:@"."];
+        value = [NSString stringWithFormat:@"%@ %@", arr.firstObject, arr1.firstObject];
+        [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        
+    }else if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"Z"].location!=NSNotFound){
+        NSArray *arr = [value componentsSeparatedByString:@"T"];
+        NSArray *arr1 = [arr.lastObject componentsSeparatedByString:@"Z"];
+        value = [NSString stringWithFormat:@"%@ %@", arr.firstObject, arr1.firstObject];
+        TLOG(@"value -> %@", value);
+        [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        
+    }else if ([value rangeOfString:@" "].location != NSNotFound){
+        NSArray *arr = [value componentsSeparatedByString:@" "];
+        NSArray *arr1 = [arr.lastObject componentsSeparatedByString:@":"];
+//        TLOG(@"arr -> %@ arr1 -> %@ arr1.count -> %d", arr, arr1, arr1.count);
+        if (arr1.count == 2) {
+//            TLOG(@"value -> %@", value);
+            [df setDateFormat:@"yyyy-MM-dd HH:mm"];
+        }else{
+            value = arr.firstObject;
+            [df setDateFormat:@"yyyy-MM-dd"];
+        }
+    }else if ([value rangeOfString:@"/"].location != NSNotFound){
         [df setDateFormat:@"yyyy-MM-dd"];
-    }else if ([value rangeOfString:@" "].location!=NSNotFound) {
-        value = [value componentsSeparatedByString:@" "].firstObject;
-        [df setDateFormat:@"yyyy-MM-dd"];
+        NSArray *arr = [value componentsSeparatedByString:@"/"];
+        NSString *year = arr.lastObject;
+        NSString *month = arr.firstObject;
+        value = [NSString stringWithFormat:@"%@-%@-01", year, month];
     }else{
-        [df setDateFormat:@"yyyy-MM-dd"];
+        NSArray *arr = [value componentsSeparatedByString:@"-"];
+        
+        if (arr.count == 2) {
+            [df setDateFormat:@"yyyy-MM"];
+        }else{
+            [df setDateFormat:@"yyyy-MM-dd"];
+        }
     }
     NSDate *d = [df dateFromString:value];
     //    [self setBirthDate:d];
+    
+//    TLOG(@"value -> %@ %@", value, df.dateFormat);
+//    TLOG(@"========");
     return d;
     
 }

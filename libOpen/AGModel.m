@@ -10,6 +10,7 @@
 #import "DSValueUtil.h"
 #import "GlobalDefine.h"
 #import "AGDateUtil.h"
+#import <objc/runtime.h>
 //#import "DSNumberUtil.h"
 
 @interface AGModel(){
@@ -34,7 +35,6 @@
         id instanceOnDisk = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         if ([DSValueUtil isAvailable:instanceOnDisk]) return instanceOnDisk;
     }
-    
     
     return [super init];
 }
@@ -109,8 +109,8 @@
 }
 
 //convert NSNumber to float will lose precision. e.g 1558038.94 -> 1558039
-- (CGFloat)floatForKey:(NSString *)key{
-    return [[self.raw objectForKey:key] floatValue];
+- (double)floatForKey:(NSString *)key{
+    return [[self.raw objectForKey:key] doubleValue];
 }
 
 - (NSNumber *)numberForKey:(NSString *)key{
@@ -155,6 +155,21 @@
 ////        [self performSelector:selector withObject:[self stringForKey:key]];
 //    }
 //    
+//}
+
+
+//- (NSArray *)propertyNames {
+//    unsigned count;
+//    objc_property_t *properties = class_copyPropertyList([self class], &count);
+//    NSMutableArray *propertyNames = [NSMutableArray array];
+//    for (int i = 0; i < count; i++) {
+//        objc_property_t property = properties[i];
+//        const char * name = property_getName(property);
+//        NSString *stringName = [NSString stringWithUTF8String:name];
+//        [propertyNames addObject:stringName];
+//    }
+//    free(properties);
+//    return propertyNames;
 //}
 
 @end

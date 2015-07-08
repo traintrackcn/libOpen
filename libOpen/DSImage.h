@@ -22,6 +22,7 @@
 
 + (NSString *)largeImageUrl:(NSString *)urlStr;
 + (NSString *)smallImageUrl:(NSString *)urlStr;
++ (NSString *)fullImageUrl:(NSString *)urlStr;
 
 + (BOOL)isImageUrlAvailableFromUrls:(NSArray *)urls;
 
@@ -29,6 +30,11 @@
 + (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 + (UIImage *)imageWithImage:(UIImage *)image cropInRect:(CGRect)rect;
 
+
++ (UIColor *)navigationBarTintColorFromRed:(CGFloat)r green:(CGFloat)g blue:(CGFloat)b;
+
 @property (nonatomic, strong) NSString *imageHost;
+@property (nonatomic, strong) UIImage *dummyImage;
+@property (nonatomic, strong) UIImage *dummyPortraitImage;
 
 @end

@@ -16,7 +16,7 @@
 + (BOOL)isNotAvailable:(id)value;
 
 + (NSString *)toString:(id)value;
-+ (CGFloat)toFloat:(id)value;
++ (double)toFloat:(id)value;
 + (NSInteger)toInteger:(id)value;
 
 + (BOOL)isNil:(id)value;

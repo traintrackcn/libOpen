@@ -163,12 +163,12 @@
 }
 
 + (BOOL)iOS7AndAbove{
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) return YES;
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 7.0) return YES;
     return NO;
 }
 
 + (BOOL)iOS8AndAbove{
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) return YES;
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0) return YES;
     return NO;
 }
 

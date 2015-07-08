@@ -70,6 +70,10 @@
     return [self imageUrl:urlStr sizePrefix:@"small"];
 }
 
++ (NSString *)fullImageUrl:(NSString *)urlStr{
+    return [self imageUrl:urlStr sizePrefix:nil];
+}
+
 + (BOOL)isImageUrlAvailableFromUrls:(NSArray *)urls{
     if (![urls isKindOfClass:[NSArray class]]) return NO;
     if ([urls count] ==  0) return NO;
@@ -87,15 +91,18 @@
         urlStr = [NSString stringWithFormat:@"%@%@", serverUrl,urlStr];
     }
     
+    if (!sizePrefix) return urlStr;
+    
     NSMutableArray *arr = [[urlStr componentsSeparatedByString:@"/"] mutableCopy];
     NSInteger lastIndex = arr.count - 1;
     NSString *imageName = [arr objectAtIndex:lastIndex];
     NSArray *arr1 = [imageName componentsSeparatedByString:@"."];
-    if ([arr1 count]<1) return urlStr;
+    if (arr1.count <= 1) return urlStr;
     NSString *imageNameWithoutFormat = [arr1 objectAtIndex:0];
     NSString *imageFormat = [arr1 objectAtIndex:1];
     NSArray *arr2 = [imageNameWithoutFormat componentsSeparatedByString:@"_"];
     if (arr2.count <= 1) return urlStr;
+    
     NSString *imageNameWithoutSize = [arr2 objectAtIndex:1];
     NSString *imageNameFinal = [NSString stringWithFormat:@"%@_%@.%@", sizePrefix,imageNameWithoutSize, imageFormat];
     [arr removeLastObject];
@@ -246,5 +253,38 @@
     return newImage;
 }
 
+
+- (UIImage *)dummyPortraitImage{
+    if (!_dummyPortraitImage) {
+        _dummyPortraitImage = [UIImage imageNamed:@"nopic_mini"];
+    }
+    return _dummyPortraitImage;
+}
+
+- (UIImage *)dummyImage{
+    if (!_dummyImage) {
+        _dummyImage = [[UIImage alloc] init];
+    }
+    return _dummyImage;
+}
+
+#pragma mark - color utils
+
++ (UIColor *)navigationBarTintColorFromRed:(CGFloat)r green:(CGFloat)g blue:(CGFloat)b{
+//    TLOG(@"r:%f g:%f b:%f", r, g, b);
+    r = [self navigationBarBackgroundTintColorValueFromDesignedColorValue:r];
+    g = [self navigationBarBackgroundTintColorValueFromDesignedColorValue:g];
+    b = [self navigationBarBackgroundTintColorValueFromDesignedColorValue:b];
+//    TLOG(@"r:%f g:%f b:%f", r, g, b);
+    return [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1];
+}
+
++ (CGFloat)navigationBarBackgroundTintColorValueFromDesignedColorValue:(CGFloat)value{
+    //    return (n – 40) / (1 － 40/255);
+    CGFloat a = value - 40;
+    CGFloat b = 1 - (40.0/255.0);
+//    TLOG(@"value:%f a:%f b:%f",value, a, b);
+    return a/b;
+}
 
 @end
