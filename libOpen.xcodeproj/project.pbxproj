@@ -7,35 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0CA54B1B4F883400DF9379 /* AGDateUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */; };
+		4A0CA54C1B4F883400DF9379 /* AGAppUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */; };
+		4A0CA54D1B4F883400DF9379 /* AGModel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF217D19C9B72F00F730FF /* AGModel.h */; };
+		4A0CA54E1B4F883400DF9379 /* DSDeviceUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF217F19C9B72F00F730FF /* DSDeviceUtil.h */; };
+		4A0CA54F1B4F883400DF9379 /* DSDraw.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218119C9B72F00F730FF /* DSDraw.h */; };
+		4A0CA5501B4F883400DF9379 /* DSImage.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218319C9B72F00F730FF /* DSImage.h */; };
+		4A0CA5511B4F883400DF9379 /* DSValueUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218519C9B72F00F730FF /* DSValueUtil.h */; };
+		4A0CA5521B4F883400DF9379 /* GlobalDefine.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218719C9B72F00F730FF /* GlobalDefine.h */; };
+		4A0CA5531B4F883400DF9379 /* TDeviceUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218819C9B72F00F730FF /* TDeviceUtil.h */; };
+		4A0CA5541B4F883400DF9379 /* TNibUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218A19C9B72F00F730FF /* TNibUtil.h */; };
+		4A0CA5551B4F883400DF9379 /* TRootViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
 		4A1AE376164CE68300C12442 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */; };
-		4A531BE41A2DAD3D00172FF8 /* AGDateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */; };
 		4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */; };
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
-		4ABF218E19C9B72F00F730FF /* AGModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF217D19C9B72F00F730FF /* AGModel.h */; };
 		4ABF218F19C9B72F00F730FF /* AGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF217E19C9B72F00F730FF /* AGModel.m */; };
-		4ABF219019C9B72F00F730FF /* DSDeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF217F19C9B72F00F730FF /* DSDeviceUtil.h */; };
 		4ABF219119C9B72F00F730FF /* DSDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218019C9B72F00F730FF /* DSDeviceUtil.m */; };
-		4ABF219219C9B72F00F730FF /* DSDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218119C9B72F00F730FF /* DSDraw.h */; };
 		4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218219C9B72F00F730FF /* DSDraw.m */; };
-		4ABF219419C9B72F00F730FF /* DSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218319C9B72F00F730FF /* DSImage.h */; };
 		4ABF219519C9B72F00F730FF /* DSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218419C9B72F00F730FF /* DSImage.m */; };
-		4ABF219619C9B72F00F730FF /* DSValueUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218519C9B72F00F730FF /* DSValueUtil.h */; };
 		4ABF219719C9B72F00F730FF /* DSValueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218619C9B72F00F730FF /* DSValueUtil.m */; };
-		4ABF219819C9B72F00F730FF /* GlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218719C9B72F00F730FF /* GlobalDefine.h */; };
-		4ABF219919C9B72F00F730FF /* TDeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218819C9B72F00F730FF /* TDeviceUtil.h */; };
 		4ABF219A19C9B72F00F730FF /* TDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218919C9B72F00F730FF /* TDeviceUtil.m */; };
-		4ABF219B19C9B72F00F730FF /* TNibUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218A19C9B72F00F730FF /* TNibUtil.h */; };
 		4ABF219C19C9B72F00F730FF /* TNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218B19C9B72F00F730FF /* TNibUtil.m */; };
-		4ABF219D19C9B72F00F730FF /* TRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
 		4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218D19C9B72F00F730FF /* TRootViewController.m */; };
-		4ABF21A019C9B76000F730FF /* libOpen-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */; };
-		4AD7D21019D111A900D7F178 /* NSObject+Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */; };
 		4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */; };
-		4AD7D2E819D2BD5C00D7F178 /* AGAppUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */; };
 		4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */; };
-		4ADF911B1A8B469B0074B478 /* SKScene+ABUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADF91191A8B469B0074B478 /* SKScene+ABUtil.h */; };
 		4ADF911C1A8B469B0074B478 /* SKScene+ABUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF911A1A8B469B0074B478 /* SKScene+ABUtil.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
 		968A603D13CEC6D400A9A7BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A603C13CEC6D400A9A7BE /* CFNetwork.framework */; };
@@ -45,6 +42,30 @@
 		968A604713CEC8E200A9A7BE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604613CEC8E200A9A7BE /* MobileCoreServices.framework */; };
 		968A604D13CECCC600A9A7BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604C13CECCC600A9A7BE /* UIKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A0CA54A1B4F881300DF9379 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				4A0CA54B1B4F883400DF9379 /* AGDateUtil.h in Copy Files */,
+				4A0CA54C1B4F883400DF9379 /* AGAppUtil.h in Copy Files */,
+				4A0CA54D1B4F883400DF9379 /* AGModel.h in Copy Files */,
+				4A0CA54E1B4F883400DF9379 /* DSDeviceUtil.h in Copy Files */,
+				4A0CA54F1B4F883400DF9379 /* DSDraw.h in Copy Files */,
+				4A0CA5501B4F883400DF9379 /* DSImage.h in Copy Files */,
+				4A0CA5511B4F883400DF9379 /* DSValueUtil.h in Copy Files */,
+				4A0CA5521B4F883400DF9379 /* GlobalDefine.h in Copy Files */,
+				4A0CA5531B4F883400DF9379 /* TDeviceUtil.h in Copy Files */,
+				4A0CA5541B4F883400DF9379 /* TNibUtil.h in Copy Files */,
+				4A0CA5551B4F883400DF9379 /* TRootViewController.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -201,30 +222,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		9680956013CD344D0014D09A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AD7D2E819D2BD5C00D7F178 /* AGAppUtil.h in Headers */,
-				4ABF219219C9B72F00F730FF /* DSDraw.h in Headers */,
-				4ABF219419C9B72F00F730FF /* DSImage.h in Headers */,
-				4ABF219919C9B72F00F730FF /* TDeviceUtil.h in Headers */,
-				4ADF911B1A8B469B0074B478 /* SKScene+ABUtil.h in Headers */,
-				4ABF219B19C9B72F00F730FF /* TNibUtil.h in Headers */,
-				4ABF219D19C9B72F00F730FF /* TRootViewController.h in Headers */,
-				4ABF21A019C9B76000F730FF /* libOpen-Prefix.pch in Headers */,
-				4ABF218E19C9B72F00F730FF /* AGModel.h in Headers */,
-				4AD7D21019D111A900D7F178 /* NSObject+Singleton.h in Headers */,
-				4A531BE41A2DAD3D00172FF8 /* AGDateUtil.h in Headers */,
-				4ABF219019C9B72F00F730FF /* DSDeviceUtil.h in Headers */,
-				4ABF219819C9B72F00F730FF /* GlobalDefine.h in Headers */,
-				4ABF219619C9B72F00F730FF /* DSValueUtil.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		9680956113CD344D0014D09A /* libOpen */ = {
 			isa = PBXNativeTarget;
@@ -232,8 +229,8 @@
 			buildPhases = (
 				9680955E13CD344D0014D09A /* Sources */,
 				9680955F13CD344D0014D09A /* Frameworks */,
-				9680956013CD344D0014D09A /* Headers */,
-				A737C0E31663A5F500E5447B /* Resources */,
+				4A0CA54A1B4F881300DF9379 /* Copy Files */,
+				4A0CA5491B4F87A700DF9379 /* lipo */,
 			);
 			buildRules = (
 			);
@@ -269,15 +266,22 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		A737C0E31663A5F500E5447B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		4A0CA5491B4F87A700DF9379 /* lipo */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = lipo;
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ID=${PRODUCT_NAME}\nFOR_SIMULATOR=${TARGET_BUILD_DIR}/../Debug-iphonesimulator/lib$ID.a\nFOR_DEVICE=${TARGET_BUILD_DIR}/../Debug-iphoneos/lib$ID.a\nFOR_BOTH_DIR=~/Desktop/$ID\nFOR_BOTH=$FOR_BOTH_DIR/lib$ID.a\nHEADERS_DIR=${TARGET_BUILD_DIR}/../Debug-iphonesimulator/include\n\necho $FOR_SIMULATOR\necho $FOR_DEVICE\necho $FOR_BOTH\n\nif [ -f $FOR_SIMULATOR ];then\nif [ -f $FOR_DEVICE ];then\n\nif [ -d $FOR_BOTH_DIR ];then\nrm -r $FOR_BOTH_DIR\nfi\n\nmkdir $FOR_BOTH_DIR\n\nlipo -create $FOR_SIMULATOR $FOR_DEVICE -output $FOR_BOTH\n\ncp -r $HEADERS_DIR $FOR_BOTH_DIR\nfi\nfi\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9680955E13CD344D0014D09A /* Sources */ = {
