@@ -20,6 +20,12 @@
 		4A0CA5551B4F883400DF9379 /* TRootViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
 		4A1AE376164CE68300C12442 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */; };
 		4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */; };
+		4A8E88671B685E9D00F48CDD /* NSDate+AGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E88661B685E9D00F48CDD /* NSDate+AGUtils.m */; };
+		4A8E88681B685F4500F48CDD /* NSDate+AGUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */; };
+		4A8E886B1B68607400F48CDD /* NSString+AGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E886A1B68607400F48CDD /* NSString+AGUtils.m */; };
+		4A8E886E1B68608A00F48CDD /* NSNumber+AGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E886D1B68608A00F48CDD /* NSNumber+AGUtils.m */; };
+		4A8E886F1B6860A100F48CDD /* NSNumber+AGUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A8E886C1B68608A00F48CDD /* NSNumber+AGUtils.h */; };
+		4A8E88701B6860A100F48CDD /* NSString+AGUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A8E88691B68607400F48CDD /* NSString+AGUtils.h */; };
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
@@ -31,7 +37,6 @@
 		4ABF219A19C9B72F00F730FF /* TDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218919C9B72F00F730FF /* TDeviceUtil.m */; };
 		4ABF219C19C9B72F00F730FF /* TNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218B19C9B72F00F730FF /* TNibUtil.m */; };
 		4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218D19C9B72F00F730FF /* TRootViewController.m */; };
-		4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */; };
 		4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */; };
 		4ADF911C1A8B469B0074B478 /* SKScene+ABUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF911A1A8B469B0074B478 /* SKScene+ABUtil.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
@@ -50,6 +55,9 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				4A8E886F1B6860A100F48CDD /* NSNumber+AGUtils.h in Copy Files */,
+				4A8E88701B6860A100F48CDD /* NSString+AGUtils.h in Copy Files */,
+				4A8E88681B685F4500F48CDD /* NSDate+AGUtils.h in Copy Files */,
 				4A0CA54B1B4F883400DF9379 /* AGDateUtil.h in Copy Files */,
 				4A0CA54C1B4F883400DF9379 /* AGAppUtil.h in Copy Files */,
 				4A0CA54D1B4F883400DF9379 /* AGModel.h in Copy Files */,
@@ -71,6 +79,12 @@
 		4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDateUtil.h; sourceTree = "<group>"; };
 		4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDateUtil.m; sourceTree = "<group>"; };
+		4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AGUtils.h"; sourceTree = "<group>"; };
+		4A8E88661B685E9D00F48CDD /* NSDate+AGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AGUtils.m"; sourceTree = "<group>"; };
+		4A8E88691B68607400F48CDD /* NSString+AGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AGUtils.h"; sourceTree = "<group>"; };
+		4A8E886A1B68607400F48CDD /* NSString+AGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AGUtils.m"; sourceTree = "<group>"; };
+		4A8E886C1B68608A00F48CDD /* NSNumber+AGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+AGUtils.h"; sourceTree = "<group>"; };
+		4A8E886D1B68608A00F48CDD /* NSNumber+AGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AGUtils.m"; sourceTree = "<group>"; };
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4A9867D016E44D3400F3797D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4ABF217D19C9B72F00F730FF /* AGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGModel.h; sourceTree = "<group>"; };
@@ -91,8 +105,6 @@
 		4ABF218C19C9B72F00F730FF /* TRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRootViewController.h; sourceTree = "<group>"; };
 		4ABF218D19C9B72F00F730FF /* TRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRootViewController.m; sourceTree = "<group>"; };
 		4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
-		4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Singleton.h"; sourceTree = "<group>"; };
-		4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Singleton.m"; sourceTree = "<group>"; };
 		4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAppUtil.h; sourceTree = "<group>"; };
 		4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAppUtil.m; sourceTree = "<group>"; };
 		4ADF91191A8B469B0074B478 /* SKScene+ABUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKScene+ABUtil.h"; sourceTree = "<group>"; };
@@ -133,27 +145,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4AD7D20C19D111A900D7F178 /* Shared3rd */ = {
-			isa = PBXGroup;
-			children = (
-				4AD7D20D19D111A900D7F178 /* NSObject+Singleton */,
-			);
-			path = Shared3rd;
-			sourceTree = "<group>";
-		};
-		4AD7D20D19D111A900D7F178 /* NSObject+Singleton */ = {
-			isa = PBXGroup;
-			children = (
-				4AD7D20E19D111A900D7F178 /* NSObject+Singleton.h */,
-				4AD7D20F19D111A900D7F178 /* NSObject+Singleton.m */,
-			);
-			path = "NSObject+Singleton";
-			sourceTree = "<group>";
-		};
 		9680955713CD344D0014D09A = {
 			isa = PBXGroup;
 			children = (
-				4AD7D20C19D111A900D7F178 /* Shared3rd */,
 				4A9867D016E44D3400F3797D /* QuartzCore.framework */,
 				4A9867CE16E44D2700F3797D /* CoreImage.framework */,
 				9680956713CD344D0014D09A /* libOpen */,
@@ -192,6 +186,12 @@
 		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
+				4A8E886C1B68608A00F48CDD /* NSNumber+AGUtils.h */,
+				4A8E886D1B68608A00F48CDD /* NSNumber+AGUtils.m */,
+				4A8E88691B68607400F48CDD /* NSString+AGUtils.h */,
+				4A8E886A1B68607400F48CDD /* NSString+AGUtils.m */,
+				4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */,
+				4A8E88661B685E9D00F48CDD /* NSDate+AGUtils.m */,
 				4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */,
 				4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */,
 				4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */,
@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ID=${PRODUCT_NAME}\nFOR_SIMULATOR=${TARGET_BUILD_DIR}/../Debug-iphonesimulator/lib$ID.a\nFOR_DEVICE=${TARGET_BUILD_DIR}/../Debug-iphoneos/lib$ID.a\nFOR_BOTH_DIR=~/Desktop/$ID\nFOR_BOTH=$FOR_BOTH_DIR/lib$ID.a\nHEADERS_DIR=${TARGET_BUILD_DIR}/../Debug-iphonesimulator/include\n\necho $FOR_SIMULATOR\necho $FOR_DEVICE\necho $FOR_BOTH\n\nif [ -f $FOR_SIMULATOR ];then\nif [ -f $FOR_DEVICE ];then\n\nif [ -d $FOR_BOTH_DIR ];then\nrm -r $FOR_BOTH_DIR\nfi\n\nmkdir $FOR_BOTH_DIR\n\nlipo -create $FOR_SIMULATOR $FOR_DEVICE -output $FOR_BOTH\n\ncp -r $HEADERS_DIR $FOR_BOTH_DIR\nfi\nfi\n";
+			shellScript = "cd ../3rd\n./do_lipo_for_static_lib.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -290,16 +290,18 @@
 			files = (
 				4ABF219A19C9B72F00F730FF /* TDeviceUtil.m in Sources */,
 				4ABF219119C9B72F00F730FF /* DSDeviceUtil.m in Sources */,
-				4AD7D21119D111A900D7F178 /* NSObject+Singleton.m in Sources */,
 				4ADF911C1A8B469B0074B478 /* SKScene+ABUtil.m in Sources */,
 				4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */,
 				4ABF219519C9B72F00F730FF /* DSImage.m in Sources */,
 				4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */,
+				4A8E886B1B68607400F48CDD /* NSString+AGUtils.m in Sources */,
 				4ABF218F19C9B72F00F730FF /* AGModel.m in Sources */,
 				4ABF219719C9B72F00F730FF /* DSValueUtil.m in Sources */,
 				4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */,
 				4ABF219C19C9B72F00F730FF /* TNibUtil.m in Sources */,
 				4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */,
+				4A8E88671B685E9D00F48CDD /* NSDate+AGUtils.m in Sources */,
+				4A8E886E1B68608A00F48CDD /* NSNumber+AGUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +368,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
+					"../3rd/NSString+HTML",
+					"../3rd/NSObject+Singleton",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../3rd/NSString+HTML ../3rd/NSObject+Singleton";
 			};
 			name = Debug;
 		};
@@ -389,10 +394,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
+					"../3rd/NSString+HTML",
+					"../3rd/NSObject+Singleton",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../3rd/NSString+HTML ../3rd/NSObject+Singleton";
 			};
 			name = Release;
 		};

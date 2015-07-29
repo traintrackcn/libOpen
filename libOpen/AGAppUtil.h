@@ -17,6 +17,6 @@
 //+ (NSString *)pushNotificationToken;
 //+ (void)setPushNotificationToken:(NSString *)pushNotificationToken;
 
-+ (BOOL)isReleaseBuild;;
+//+ (BOOL)isReleaseBuild;;
 
 @end

@@ -34,12 +34,12 @@
 //    return [[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS_KEY_PUSH_NOTIFICATION_TOKEN];
 //}
 
-+ (BOOL)isReleaseBuild{
-    BOOL bRelease = YES;
-#ifdef DEBUG
-    bRelease = NO;
-#endif
-    return bRelease;
-}
+//+ (BOOL)isReleaseBuild{
+//    BOOL bRelease = YES;
+//#ifdef DEBUG
+//    bRelease = NO;
+//#endif
+//    return bRelease;
+//}
 
 @end
