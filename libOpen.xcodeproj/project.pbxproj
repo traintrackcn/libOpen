@@ -38,7 +38,6 @@
 		4ABF219C19C9B72F00F730FF /* TNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218B19C9B72F00F730FF /* TNibUtil.m */; };
 		4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218D19C9B72F00F730FF /* TRootViewController.m */; };
 		4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */; };
-		4ADF911C1A8B469B0074B478 /* SKScene+ABUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF911A1A8B469B0074B478 /* SKScene+ABUtil.m */; };
 		9680956613CD344D0014D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680956513CD344D0014D09A /* Foundation.framework */; };
 		968A603D13CEC6D400A9A7BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A603C13CEC6D400A9A7BE /* CFNetwork.framework */; };
 		968A604313CEC89700A9A7BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A604013CEC89600A9A7BE /* CoreGraphics.framework */; };
@@ -107,8 +106,6 @@
 		4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libOpen-Prefix.pch"; sourceTree = "<group>"; };
 		4AD7D2E619D2BD5C00D7F178 /* AGAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAppUtil.h; sourceTree = "<group>"; };
 		4AD7D2E719D2BD5C00D7F178 /* AGAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAppUtil.m; sourceTree = "<group>"; };
-		4ADF91191A8B469B0074B478 /* SKScene+ABUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKScene+ABUtil.h"; sourceTree = "<group>"; };
-		4ADF911A1A8B469B0074B478 /* SKScene+ABUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKScene+ABUtil.m"; sourceTree = "<group>"; };
 		9680956213CD344D0014D09A /* liblibOpen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibOpen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680956513CD344D0014D09A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9680957013CD344E0014D09A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -214,8 +211,6 @@
 				4ABF218C19C9B72F00F730FF /* TRootViewController.h */,
 				4ABF218D19C9B72F00F730FF /* TRootViewController.m */,
 				4ABF219F19C9B76000F730FF /* libOpen-Prefix.pch */,
-				4ADF91191A8B469B0074B478 /* SKScene+ABUtil.h */,
-				4ADF911A1A8B469B0074B478 /* SKScene+ABUtil.m */,
 			);
 			path = libOpen;
 			sourceTree = "<group>";
@@ -290,7 +285,6 @@
 			files = (
 				4ABF219A19C9B72F00F730FF /* TDeviceUtil.m in Sources */,
 				4ABF219119C9B72F00F730FF /* DSDeviceUtil.m in Sources */,
-				4ADF911C1A8B469B0074B478 /* SKScene+ABUtil.m in Sources */,
 				4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */,
 				4ABF219519C9B72F00F730FF /* DSImage.m in Sources */,
 				4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */,
@@ -368,13 +362,15 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
-					"../3rd/NSString+HTML",
-					"../3rd/NSObject+Singleton",
+					../3rd/thirdPartyOpenResources,
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lthirdPartyOpenResources",
+				);
 				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "../3rd/NSString+HTML ../3rd/NSObject+Singleton";
+				USER_HEADER_SEARCH_PATHS = "\"../3rd/thirdPartyOpenResources/include\"";
 			};
 			name = Debug;
 		};
@@ -394,13 +390,15 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
-					"../3rd/NSString+HTML",
-					"../3rd/NSObject+Singleton",
+					../3rd/thirdPartyOpenResources,
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lthirdPartyOpenResources",
+				);
 				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "../3rd/NSString+HTML ../3rd/NSObject+Singleton";
+				USER_HEADER_SEARCH_PATHS = "\"../3rd/thirdPartyOpenResources/include\"";
 			};
 			name = Release;
 		};
