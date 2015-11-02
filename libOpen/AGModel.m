@@ -142,6 +142,7 @@
 }
 
 - (BOOL)isAvailableForKey:(NSString *)key{
+    if ([DSValueUtil isNotAvailable:self.raw]) return NO;
     return [DSValueUtil isAvailable:[self.raw objectForKey:key]];
 }
 

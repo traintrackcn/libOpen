@@ -63,4 +63,64 @@ static DSDraw *____instanceDSDraw;
 
 }
 
+
++ (void)drawCorner:(CGContextRef)c type:(AGCornerPosition)type center:(CGPoint)center r:(CGFloat)r fillColor:(UIColor *)fillColor borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth{
+    
+    CGFloat startAngle;
+    CGFloat endAngle;
+    
+    switch (type) {
+        case AGCornerPositionBL:
+            startAngle = M_PI_2;
+            endAngle = M_PI_2*2;
+            break;
+        case AGCornerPositionBR:
+            startAngle = 0;
+            endAngle = M_PI_2;
+            break;
+            
+        case AGCornerPositionTL:
+            startAngle = M_PI_2*2;
+            endAngle = M_PI_2*3;
+            break;
+        case AGCornerPositionTR:
+            startAngle = M_PI_2*3;
+            endAngle = M_PI_2*4;
+            break;
+    }
+    
+    //    CGMutablePathRef path = CGPathCreateMutable();
+    //    CGPathAddArc(path, NULL, arcCenter.x, arcCenter.y, w/2, 0, M_PI_2, YES);
+    //    CGPathCloseSubpath(path);
+    
+    //border
+    
+    CGContextSaveGState(c);
+//    CGContextSetFillColorWithColor(c, [[UIColor yellowColor] CGColor]);
+    CGContextSetStrokeColorWithColor(c, [borderColor CGColor]);
+    CGContextSetLineWidth(c, borderWidth);
+    
+    CGContextAddArc(c, center.x, center.y, r, startAngle, endAngle, NO);
+//    CGContextClosePath(c);
+    CGContextDrawPath(c, kCGPathStroke);
+    CGContextRestoreGState(c);
+    
+    //    CGPathRelease(path);
+    
+    //        3*PI/2
+    //          |
+    //    PI ---|--- 0
+    //          |
+    //        PI/2
+    
+    // fill
+    CGContextSaveGState(c);
+    CGContextSetFillColorWithColor(c, [fillColor CGColor]);
+    CGContextSetLineWidth(c, borderWidth);
+    CGContextAddArc(c, center.x, center.y, r, 0, M_PI*2, NO);
+    CGContextDrawPath(c, kCGPathFill);
+    CGContextRestoreGState(c);
+    
+}
+
 @end

@@ -24,3 +24,7 @@
 #define PTM_RATIO 32.0
 #define RANDOM_INT arc4random()%999999999
 
+NS_INLINE float RADIAN_FROM_DEGREE(degrees) {
+    return (degrees / 180) * M_PI;
+}
+

@@ -18,7 +18,6 @@
 		4A0CA5531B4F883400DF9379 /* TDeviceUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218819C9B72F00F730FF /* TDeviceUtil.h */; };
 		4A0CA5541B4F883400DF9379 /* TNibUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218A19C9B72F00F730FF /* TNibUtil.h */; };
 		4A0CA5551B4F883400DF9379 /* TRootViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
-		4A1AE376164CE68300C12442 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */; };
 		4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */; };
 		4A8E88671B685E9D00F48CDD /* NSDate+AGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E88661B685E9D00F48CDD /* NSDate+AGUtils.m */; };
 		4A8E88681B685F4500F48CDD /* NSDate+AGUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */; };
@@ -75,7 +74,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDateUtil.h; sourceTree = "<group>"; };
 		4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDateUtil.m; sourceTree = "<group>"; };
 		4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AGUtils.h"; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 		968A604113CEC89600A9A7BE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		968A604213CEC89600A9A7BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		968A604613CEC8E200A9A7BE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		968A604813CEC90A00A9A7BE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		968A604C13CECCC600A9A7BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A722E962165CC0700025A614 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -128,7 +125,6 @@
 				4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */,
 				4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */,
 				4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */,
-				4A1AE376164CE68300C12442 /* libz.1.2.5.dylib in Frameworks */,
 				968A604D13CECCC600A9A7BE /* UIKit.framework in Frameworks */,
 				968A604713CEC8E200A9A7BE /* MobileCoreServices.framework in Frameworks */,
 				968A604313CEC89700A9A7BE /* CoreGraphics.framework in Frameworks */,
@@ -165,8 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				A722E962165CC0700025A614 /* ImageIO.framework */,
-				4A1AE375164CE68300C12442 /* libz.1.2.5.dylib */,
-				968A604813CEC90A00A9A7BE /* libz.dylib */,
 				968A603E13CEC72200A9A7BE /* libxml2.dylib */,
 				968A604C13CECCC600A9A7BE /* UIKit.framework */,
 				968A604613CEC8E200A9A7BE /* MobileCoreServices.framework */,
@@ -367,6 +361,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lthirdPartyOpenResources",
+					"-l\"z\"",
 				);
 				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
@@ -395,6 +390,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lthirdPartyOpenResources",
+					"-l\"z\"",
 				);
 				PRODUCT_NAME = libOpen;
 				SKIP_INSTALL = YES;
