@@ -10,6 +10,8 @@
 
 @interface DSImage : NSObject
 
++ (CGSize)scaleSize:(CGSize)size aspectFitMaxLen:(CGFloat)maxLen;
+
 + (UIImage *)imageWithView:(UIView *)view;
 + (UIImage *)imageWithTransformedView:(UIView *)view;
 

@@ -15,6 +15,28 @@
 
 @implementation DSImage
 
+#pragma mark - side stuff
+
+
++ (CGSize)scaleSize:(CGSize)size aspectFitMaxLen:(CGFloat)maxLen{
+    CGFloat ratio = 1.0f;
+//    CGFloat maxSideLen = 800;
+    if ( size.width > size.height ){
+        ratio = maxLen / size.width;
+    }else{
+        ratio = maxLen / size.height;
+    }
+    
+    //    LOG_INFO(@"ration %f",ratio);
+    if (ratio > 1.0) ratio = 1.0;
+    
+    
+    return CGSizeMake( (int)(size.width * ratio), (int)(size.height * ratio));
+}
+
+
+#pragma mark - image stuff
+
 + (UIImage *)rectangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor{
     CGFloat scale = 1.0;
     if ([DSDeviceUtil isRetina])  scale = 2.0;
@@ -170,8 +192,13 @@
     UIImage *formattedImage = [self imageWithWhiteBackgroundForImage:image];
     //    return formattedImage;
     //    TLOG(@"size %f %f", formattedImage.size.width, formattedImage.size.height);
-    CGRect rect = {0, 0, formattedImage.size.width/image.scale, formattedImage.size.height/image.scale};
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    
+//    TLOG(@"image.scale -> %f", image.scale);
+    CGFloat scale = image.scale;
+    CGRect rect = {0, 0, formattedImage.size.width/scale, formattedImage.size.height/scale};
+    
+//    rect = {0, 0, formattedImage.size.width, formattedImage.size.height};
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, scale);
     [color setFill];
     UIRectFill(rect);
     UIImage *targetColorImage = UIGraphicsGetImageFromCurrentImageContext();
