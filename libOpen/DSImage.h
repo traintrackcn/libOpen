@@ -20,7 +20,7 @@
 //+ (UIImage *)fillImageNamed:(NSString *)imageName withColor:(UIColor *)color;
 + (UIImage *)rectangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
 + (UIImage *)circleWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
-+ (UIImage *)triangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
++ (UIImage *)triangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor borderColor:(UIColor *)borderColor;
 
 + (NSString *)largeImageUrl:(NSString *)urlStr;
 + (NSString *)smallImageUrl:(NSString *)urlStr;

@@ -17,5 +17,6 @@
 - (NSString *)textStyleForPostAutoshipDate;
 
 - (NSString *)valueForPost;
+- (NSString *)valueForPostStyleUTC;
 
 @end

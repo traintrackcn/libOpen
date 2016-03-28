@@ -11,6 +11,7 @@
 #import "NSObject+Singleton.h"
 //#import "DSHostSettingManager.h"
 //#import "AGServer.h"
+#import "DSDraw.h"
 
 
 @implementation DSImage
@@ -63,25 +64,40 @@
     return img;
 }
 
-+ (UIImage *)triangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor{
++ (UIImage *)triangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor borderColor:(UIColor *)borderColor{
+    
+    
     
     CGFloat scale = 1.0;
     if ([DSDeviceUtil isRetina])  scale = 2.0;
     UIGraphicsBeginImageContextWithOptions(size, NO, scale);
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    CGPoint ptT = CGPointMake(CGRectGetMidX(rect), CGRectGetMinY(rect));
+    CGPoint ptBR = CGPointMake(CGRectGetMaxX(rect), CGRectGetMaxY(rect));
+    CGPoint ptBL = CGPointMake(CGRectGetMinX(rect), CGRectGetMaxY(rect));
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     [fillColor setFill];
     CGContextBeginPath(ctx);
-    CGContextMoveToPoint   (ctx, CGRectGetMidX(rect), CGRectGetMinY(rect));  // top
-    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMaxY(rect));  // mid right
-    CGContextAddLineToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));  // bottom left
+    CGContextMoveToPoint   (ctx, ptT.x, ptT.y);  // top
+    CGContextAddLineToPoint(ctx, ptBR.x, ptBR.y);  // bottom right
+    CGContextAddLineToPoint(ctx, ptBL.x, ptBL.y);  // bottom left
     CGContextClosePath(ctx);
     
     CGContextFillPath(ctx);
+    
+    if (borderColor) {
+        [DSDraw drawLine:ctx startPoint:ptT endPoint:ptBR strokeColor:borderColor lineWidth:.5f];
+        [DSDraw drawLine:ctx startPoint:ptT endPoint:ptBL strokeColor:borderColor lineWidth:.5f];
+    }
+    
+    
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return img;
 }
+
+
+
 
 
 + (NSString *)largeImageUrl:(NSString *)urlStr{

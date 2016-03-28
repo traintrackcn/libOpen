@@ -58,6 +58,18 @@
     return  [df stringFromDate:self];
 }
 
+- (NSString *)valueForPostStyleUTC{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    [df setTimeZone:timeZone];
+    NSDateFormatter *dfDate = [[NSDateFormatter alloc] init];
+    [dfDate setDateFormat:@"yyyy-MM-dd"];
+    
+    NSDateFormatter *dfTime = [[NSDateFormatter alloc] init];
+    [dfTime setDateFormat:@"HH:mm:ss"];
+    return  [NSString stringWithFormat:@"%@T%@Z", [dfDate stringFromDate:self], [dfTime stringFromDate:self]];
+}
+
 - (NSString *)textStyleForPostAutoshipDate{
     NSDateFormatter *dfDate = [[NSDateFormatter alloc] init];
     [dfDate setDateFormat:@"yyyy-MM-dd"];
