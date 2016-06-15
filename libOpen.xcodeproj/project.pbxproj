@@ -19,6 +19,10 @@
 		4A0CA5541B4F883400DF9379 /* TNibUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218A19C9B72F00F730FF /* TNibUtil.h */; };
 		4A0CA5551B4F883400DF9379 /* TRootViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
 		4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */; };
+		4A7EDF7C1CEDECFA00A311D2 /* NSString+DAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EDF7B1CEDECFA00A311D2 /* NSString+DAUtils.m */; };
+		4A7EDF7D1CEDED0700A311D2 /* NSString+DAUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A7EDF7A1CEDECFA00A311D2 /* NSString+DAUtils.h */; };
+		4A7EDF811CEDF0A000A311D2 /* DAFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EDF801CEDF0A000A311D2 /* DAFileUtil.m */; };
+		4A7EDF821CEDF0A800A311D2 /* DAFileUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A7EDF7F1CEDF0A000A311D2 /* DAFileUtil.h */; };
 		4A8E88671B685E9D00F48CDD /* NSDate+AGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E88661B685E9D00F48CDD /* NSDate+AGUtils.m */; };
 		4A8E88681B685F4500F48CDD /* NSDate+AGUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */; };
 		4A8E886B1B68607400F48CDD /* NSString+AGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E886A1B68607400F48CDD /* NSString+AGUtils.m */; };
@@ -28,6 +32,10 @@
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
+		4AB650591D10FB0000F5735C /* AGObjectPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB650561D10FB0000F5735C /* AGObjectPool.m */; };
+		4AB6505A1D10FB0000F5735C /* NSObject+ObjPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB650581D10FB0000F5735C /* NSObject+ObjPool.m */; };
+		4AB6505B1D10FB0B00F5735C /* AGObjectPool.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AB650551D10FB0000F5735C /* AGObjectPool.h */; };
+		4AB6505C1D10FB0B00F5735C /* NSObject+ObjPool.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AB650571D10FB0000F5735C /* NSObject+ObjPool.h */; };
 		4ABF218F19C9B72F00F730FF /* AGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF217E19C9B72F00F730FF /* AGModel.m */; };
 		4ABF219119C9B72F00F730FF /* DSDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218019C9B72F00F730FF /* DSDeviceUtil.m */; };
 		4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF218219C9B72F00F730FF /* DSDraw.m */; };
@@ -53,6 +61,10 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				4AB6505B1D10FB0B00F5735C /* AGObjectPool.h in Copy Files */,
+				4AB6505C1D10FB0B00F5735C /* NSObject+ObjPool.h in Copy Files */,
+				4A7EDF821CEDF0A800A311D2 /* DAFileUtil.h in Copy Files */,
+				4A7EDF7D1CEDED0700A311D2 /* NSString+DAUtils.h in Copy Files */,
 				4A8E886F1B6860A100F48CDD /* NSNumber+AGUtils.h in Copy Files */,
 				4A8E88701B6860A100F48CDD /* NSString+AGUtils.h in Copy Files */,
 				4A8E88681B685F4500F48CDD /* NSDate+AGUtils.h in Copy Files */,
@@ -76,6 +88,10 @@
 /* Begin PBXFileReference section */
 		4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDateUtil.h; sourceTree = "<group>"; };
 		4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDateUtil.m; sourceTree = "<group>"; };
+		4A7EDF7A1CEDECFA00A311D2 /* NSString+DAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DAUtils.h"; sourceTree = "<group>"; };
+		4A7EDF7B1CEDECFA00A311D2 /* NSString+DAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DAUtils.m"; sourceTree = "<group>"; };
+		4A7EDF7F1CEDF0A000A311D2 /* DAFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAFileUtil.h; sourceTree = "<group>"; };
+		4A7EDF801CEDF0A000A311D2 /* DAFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAFileUtil.m; sourceTree = "<group>"; };
 		4A8E88651B685E9D00F48CDD /* NSDate+AGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AGUtils.h"; sourceTree = "<group>"; };
 		4A8E88661B685E9D00F48CDD /* NSDate+AGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AGUtils.m"; sourceTree = "<group>"; };
 		4A8E88691B68607400F48CDD /* NSString+AGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AGUtils.h"; sourceTree = "<group>"; };
@@ -84,6 +100,10 @@
 		4A8E886D1B68608A00F48CDD /* NSNumber+AGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AGUtils.m"; sourceTree = "<group>"; };
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4A9867D016E44D3400F3797D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4AB650551D10FB0000F5735C /* AGObjectPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGObjectPool.h; sourceTree = "<group>"; };
+		4AB650561D10FB0000F5735C /* AGObjectPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGObjectPool.m; sourceTree = "<group>"; };
+		4AB650571D10FB0000F5735C /* NSObject+ObjPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjPool.h"; sourceTree = "<group>"; };
+		4AB650581D10FB0000F5735C /* NSObject+ObjPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjPool.m"; sourceTree = "<group>"; };
 		4ABF217D19C9B72F00F730FF /* AGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGModel.h; sourceTree = "<group>"; };
 		4ABF217E19C9B72F00F730FF /* AGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGModel.m; sourceTree = "<group>"; };
 		4ABF217F19C9B72F00F730FF /* DSDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDeviceUtil.h; sourceTree = "<group>"; };
@@ -137,6 +157,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AB650541D10FB0000F5735C /* ObjectPool */ = {
+			isa = PBXGroup;
+			children = (
+				4AB650551D10FB0000F5735C /* AGObjectPool.h */,
+				4AB650561D10FB0000F5735C /* AGObjectPool.m */,
+				4AB650571D10FB0000F5735C /* NSObject+ObjPool.h */,
+				4AB650581D10FB0000F5735C /* NSObject+ObjPool.m */,
+			);
+			path = ObjectPool;
+			sourceTree = "<group>";
+		};
 		9680955713CD344D0014D09A = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +206,11 @@
 		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
+				4AB650541D10FB0000F5735C /* ObjectPool */,
+				4A7EDF7F1CEDF0A000A311D2 /* DAFileUtil.h */,
+				4A7EDF801CEDF0A000A311D2 /* DAFileUtil.m */,
+				4A7EDF7A1CEDECFA00A311D2 /* NSString+DAUtils.h */,
+				4A7EDF7B1CEDECFA00A311D2 /* NSString+DAUtils.m */,
 				4A8E886C1B68608A00F48CDD /* NSNumber+AGUtils.h */,
 				4A8E886D1B68608A00F48CDD /* NSNumber+AGUtils.m */,
 				4A8E88691B68607400F48CDD /* NSString+AGUtils.h */,
@@ -275,9 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7EDF7C1CEDECFA00A311D2 /* NSString+DAUtils.m in Sources */,
 				4ABF219A19C9B72F00F730FF /* TDeviceUtil.m in Sources */,
+				4AB6505A1D10FB0000F5735C /* NSObject+ObjPool.m in Sources */,
+				4AB650591D10FB0000F5735C /* AGObjectPool.m in Sources */,
 				4ABF219119C9B72F00F730FF /* DSDeviceUtil.m in Sources */,
 				4ABF219319C9B72F00F730FF /* DSDraw.m in Sources */,
+				4A7EDF811CEDF0A000A311D2 /* DAFileUtil.m in Sources */,
 				4ABF219519C9B72F00F730FF /* DSImage.m in Sources */,
 				4AD7D2E919D2BD5C00D7F178 /* AGAppUtil.m in Sources */,
 				4A8E886B1B68607400F48CDD /* NSString+AGUtils.m in Sources */,

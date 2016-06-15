@@ -7,6 +7,7 @@
 //
 
 #import "NSDate+AGUtils.h"
+#import "AGDateUtil.h"
 
 @implementation NSDate (AGUtils)
 
@@ -17,27 +18,17 @@
     [dateFormatter setDateFormat:[NSDateFormatter dateFormatFromTemplate:@"yyyyMMM" options:0 locale:[NSLocale currentLocale]]];
     
     return [dateFormatter stringFromDate:self];
-    
-//    NSLog(@"Happy New Year: %@", dateString);
-    
-    
-//    return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
+}
+
+- (NSString *)textStyleShortDetail{
+    return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterShortStyle];
 }
 
 - (NSString *)textStyleDefault{
-//    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-//    [df setDateFormat:@"yyyy-MM-dd"];
-//    return  [df stringFromDate:self];
     return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle];
 }
 
 - (NSString *)textStyleDetail{
-//    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-////    [df setDateFormat:@"yyyy-MM-dd HH:mm"];
-//    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"he"];
-//    [df setLocale:locale];
-//    return  [df stringFromDate:self];
-    
     return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
 }
 
@@ -59,13 +50,12 @@
 }
 
 - (NSString *)valueForPostStyleUTC{
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
-    [df setTimeZone:timeZone];
     NSDateFormatter *dfDate = [[NSDateFormatter alloc] init];
+    [dfDate setTimeZone:[self utcTimezone]];
     [dfDate setDateFormat:@"yyyy-MM-dd"];
     
     NSDateFormatter *dfTime = [[NSDateFormatter alloc] init];
+    [dfTime setTimeZone:[self utcTimezone]];
     [dfTime setDateFormat:@"HH:mm:ss"];
     return  [NSString stringWithFormat:@"%@T%@Z", [dfDate stringFromDate:self], [dfTime stringFromDate:self]];
 }
@@ -74,6 +64,13 @@
     NSDateFormatter *dfDate = [[NSDateFormatter alloc] init];
     [dfDate setDateFormat:@"yyyy-MM-dd"];
     return  [NSString stringWithFormat:@"%@", [dfDate stringFromDate:self]];
+}
+
+#pragma mark - properties
+
+- (id)utcTimezone{
+    return [NSTimeZone timeZoneWithName:@"UTC"];
+    //    [df setTimeZone:timeZone];
 }
 
 @end

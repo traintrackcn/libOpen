@@ -12,6 +12,7 @@
 
 + (NSString *)defaultValueOfPeriodCollection:(NSDictionary *)periodCollection;
 
+//+ (NSTimeZone *)utcTimezone;
 
 + (NSString *)formatCreditCardExpirationDate:(NSString *)date;
 + (NSString *)formatToYYYYMinusMMinusDDForYYYYMMDD:(NSString *)date;

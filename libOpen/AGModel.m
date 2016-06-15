@@ -26,22 +26,29 @@
     return [[self.class alloc] init];
 }
 
-
-- (id)init{
-    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:NSStringFromClass(self.class)];
-//    TLOG(@"%@ data -> %d", self.className, data.length);
+- (instancetype)initFromDiskWithKey:(NSString *)key{
+//    TLOG(@"%@", key);
+    NSData *data = [self.userDefaults objectForKey:key];
+    
+    NSInteger localDataLen = data.length;
+    if(localDataLen!=0) TLOG(@"%@ [%@]", self.className, [NSNumber numberWithInteger:data.length]);
     
     if (data.length > 0) {
         id instanceOnDisk = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        if ([DSValueUtil isAvailable:instanceOnDisk]) return instanceOnDisk;
+        if (instanceOnDisk) return instanceOnDisk;
     }
     
     return [super init];
 }
 
+- (id)init{
+    NSString *key = NSStringFromClass(self.class);
+    return [self initFromDiskWithKey:key];
+}
+
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
-    TLOG(@"%@", self.className);
+//    TLOG(@"%@", self.className);
     self = [super init];
     if (self) {
         //        [self setInvoiceNumber:[aDecoder decodeObjectForKey:@"invoiceNumber"]];
@@ -50,7 +57,7 @@
 }
 
 - (void) encodeWithCoder:(NSCoder *)aCoder {
-    TLOG(@"%@", NSStringFromClass(self.class));
+//    TLOG(@"%@", NSStringFromClass(self.class));
 }
 
 #pragma mark - raw data ops
@@ -70,17 +77,23 @@
 
 #pragma mark - ops
 
-- (void)saveToDisk{
+- (void)saveToDiskWithKey:(NSString *)key{
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
-    NSString *key = self.className;
     //    TLOG(@"save %@ %d", key, data.length);
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:key];
+    [self.userDefaults setObject:data forKey:key];
+    TLOG(@"%@ SAVED", key);
+}
+
+- (void)saveToDisk{
+    NSString *key = self.className;
+    [self saveToDiskWithKey:key];
+    
 }
 
 - (void)removeFromDisk{
 //    self = [super init];
     NSString *key = self.className;
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+    [self.userDefaults removeObjectForKey:key];
     
 }
 
@@ -90,11 +103,10 @@
     return NSStringFromClass(self.class);
 }
 
-//#pragma mark - 
-//
-//- (void)setString:(NSString *)string forProperty:(id)property{
-//    
-//}
+- (NSUserDefaults *)userDefaults{
+    if (_userDefaults) return _userDefaults;
+    return [NSUserDefaults standardUserDefaults];
+}
 
 #pragma mark - converter
 

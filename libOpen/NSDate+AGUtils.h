@@ -15,6 +15,7 @@
 - (NSString *)textStyleDetail;
 - (NSString *)textStyleForPost;
 - (NSString *)textStyleForPostAutoshipDate;
+- (NSString *)textStyleShortDetail;
 
 - (NSString *)valueForPost;
 - (NSString *)valueForPostStyleUTC;

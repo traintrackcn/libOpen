@@ -15,6 +15,9 @@
 
 @property (nonatomic, strong) NSString *keyForSavingToDisk;
 @property (nonatomic, strong) id raw;
+@property (nonatomic, strong) NSUserDefaults *userDefaults;
+
+- (instancetype)initFromDiskWithKey:(NSString *)key;
 
 - (id)initWithRaw:(id)raw;
 - (void)updateWithRaw:(id)raw;
@@ -34,5 +37,6 @@
 
 //- (void)setStringForKey:(NSString *)key selector:(SEL)selector;
 //- (NSArray *)propertyNames;
+
 
 @end

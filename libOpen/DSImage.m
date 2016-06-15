@@ -36,6 +36,18 @@
 }
 
 
++ (UIImage *)resizableImageWithColor:(UIColor *)c radius:(CGFloat)r{
+    CGFloat w = r*2+1;
+    CGFloat h = w;
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
+    [v setOpaque:NO];
+    [v.layer setCornerRadius:r];
+    [v setClipsToBounds:YES];
+    [v setBackgroundColor:c];
+    UIImage *img = [self imageWithView:v];
+    return  [img resizableImageWithCapInsets:UIEdgeInsetsMake(r, r, r, r)];
+}
+
 #pragma mark - image stuff
 
 + (UIImage *)rectangleWithSize:(CGSize)size fillColor:(UIColor *)fillColor{

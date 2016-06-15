@@ -133,20 +133,27 @@
     return [self componetsOfDate:date];
 }
 
++ (id)utcTimezone{
+    return [NSTimeZone timeZoneWithName:@"UTC"];
+//    [df setTimeZone:timeZone];
+}
+
 + (NSDate *)dateFromString:(NSString *)dateStr{
     NSString *value = dateStr;
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    
+//    df setTimeZone:<#(NSTimeZone * _Nullable)#>
 //    TLOG(@"origin-value -> %@", value);
     
     if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"."].location!=NSNotFound) {
 //        if ([value rangeOfString:@"Z"].location != NSNotFound){
+        [df setTimeZone:self.utcTimezone];
         NSArray *arr = [value componentsSeparatedByString:@"T"];
         NSArray *arr1 = [[arr objectAtIndex:1] componentsSeparatedByString:@"."];
         value = [NSString stringWithFormat:@"%@ %@", arr.firstObject, arr1.firstObject];
         [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
         
     }else if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"Z"].location!=NSNotFound){
+        [df setTimeZone:self.utcTimezone];
         NSArray *arr = [value componentsSeparatedByString:@"T"];
         NSArray *arr1 = [arr.lastObject componentsSeparatedByString:@"Z"];
         value = [NSString stringWithFormat:@"%@ %@", arr.firstObject, arr1.firstObject];
