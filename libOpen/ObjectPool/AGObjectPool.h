@@ -12,6 +12,7 @@
 
 - (nonnull id)objectForKey:(nonnull NSString *)key;
 - (void)setObject:(nullable id)object forKey:(nonnull id<NSCopying>)key;
+- (void)removeObjectForKey:(nonnull id)key;
 
 @property (nonatomic, copy , nullable) NSString *parentClassName;
 

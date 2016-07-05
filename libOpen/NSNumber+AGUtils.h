@@ -22,6 +22,11 @@
 - (BOOL)isNotBiggerThan:(NSNumber *)num;
 
 - (NSString *)valueForCurrency;
-- (NSString *)valueForPercent;
+- (NSString *)valueForPercentage;
+
+- (NSString *)textStyleTwoFractionDigits;
+- (NSString *)textStyleCurrencyGlobal;
+- (NSString *)textStylePercentage;
+- (NSString *)textStyleVolume;
 
 @end

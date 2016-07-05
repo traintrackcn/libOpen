@@ -20,6 +20,13 @@
 
 @implementation DAFileUtil
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        [self createTmpDirectory];
+    }
+    return self;
+}
 
 #pragma mark - utils
 

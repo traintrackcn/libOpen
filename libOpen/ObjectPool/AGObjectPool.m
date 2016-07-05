@@ -32,6 +32,10 @@
     return [self.dic objectForKey:key];
 }
 
+- (void)removeObjectForKey:(id)key{
+    [self.dic removeObjectForKey:key];
+}
+
 - (void)dealloc{
 //    TLOG(@"%@ DEALLOC", [NSString stringWithFormat:@"%@", self.parentClassName]);
     _dic = nil;
