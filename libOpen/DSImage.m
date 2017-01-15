@@ -36,6 +36,18 @@
 }
 
 
++ (CGSize)scaleSize:(CGSize)size aspectFitSize:(CGSize)fitSize{
+    CGFloat scaleW = size.width/fitSize.width;
+    CGFloat scaleH = size.height/fitSize.height;
+    CGFloat scale;
+    
+    scale = scaleW>scaleH?scaleW:scaleH;
+    
+    return CGSizeMake (size.width/scale, size.height/scale);
+//    return CGSizeMake(size.width, <#CGFloat height#>)
+    
+}
+
 + (UIImage *)resizableImageWithColor:(UIColor *)c radius:(CGFloat)r{
     CGFloat w = r*2+1;
     CGFloat h = w;
@@ -301,7 +313,7 @@
     //UIGraphicsBeginImageContext(newSize);
     // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
     // Pass 1.0 to force exact pixel size.
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(newSize, YES, image.scale);
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

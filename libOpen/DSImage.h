@@ -11,6 +11,7 @@
 @interface DSImage : NSObject
 
 + (CGSize)scaleSize:(CGSize)size aspectFitMaxLen:(CGFloat)maxLen;
++ (CGSize)scaleSize:(CGSize)size aspectFitSize:(CGSize)fitSize;
 + (UIImage *)resizableImageWithColor:(UIColor *)c radius:(CGFloat)radius;
 
 + (UIImage *)imageWithView:(UIView *)view;

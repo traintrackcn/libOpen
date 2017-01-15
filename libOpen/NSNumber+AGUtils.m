@@ -54,28 +54,34 @@
 #pragma mark - formatter
 
 - (NSString *)valueForPercentage{
-    NSNumber *num = [self copy];
+//    TLOG(@"self -> %@", self);
+//    NSNumber *num = [self copy];
     NSNumberFormatter *f = self.numberFormatter;
     //    [f setPositiveFormat:@"0.##"];
     [f setNumberStyle:NSNumberFormatterPercentStyle];
     [f setMaximumFractionDigits:2];
-    NSString *result = [f stringFromNumber:num];
-    if (result) result = @"0%";
+    NSString *result = [f stringFromNumber:self];
+    TLOG(@"result -> %@", result);
+    if (!result) result = @"0%";
     return result;
 }
 
 - (NSString *)valueForCurrency{
+//    TLOG(@"self -> %@", self);
     NSNumberFormatter *f = [[NSNumberFormatter alloc]init];
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
     [f setRoundingMode:NSNumberFormatterRoundHalfUp];
     [f setMaximumFractionDigits:2];
     [f setMinimumFractionDigits:2];
-    return [f stringFromNumber:self];
+    NSString *result = [f stringFromNumber:self];
+    if (result) result = @"0.00";
+    return result;
 }
 
 #pragma mark - texts
 
 - (NSString *)textStyleTwoFractionDigits{
+//    TLOG(@"self -> %@", self);
     if(![self isKindOfClass:[NSNumber class]]) return [NSString stringWithFormat:@"%@", self];
     NSNumber *value = [self copy];
     NSNumberFormatter *f = self.numberFormatter;
@@ -86,6 +92,7 @@
 }
 
 - (NSString *)textStyleVolume{
+//    TLOG(@"self -> %@", self);
     NSNumberFormatter *f = self.numberFormatter;
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
     [f setMaximumFractionDigits:2];

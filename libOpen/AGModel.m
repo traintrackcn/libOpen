@@ -17,6 +17,8 @@
 //    id raw;
 }
 
+@property (nonatomic, strong) NSString *key;
+
 @end
 
 @implementation AGModel
@@ -30,12 +32,16 @@
 //    TLOG(@"%@", key);
     NSData *data = [self.userDefaults objectForKey:key];
     
-    NSInteger localDataLen = data.length;
-    if(localDataLen!=0) TLOG(@"%@ [%@]", self.className, [NSNumber numberWithInteger:data.length]);
+//    NSInteger localDataLen = data.length;
+//    if(localDataLen!=0) TLOG(@"%@ [%@]", key, [NSNumber numberWithInteger:data.length]);
     
     if (data.length > 0) {
+        TLOG(@"%@ [%@]", key, [NSNumber numberWithInteger:data.length]);
         id instanceOnDisk = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        if (instanceOnDisk) return instanceOnDisk;
+        if (instanceOnDisk) {
+            [self setKey:key];
+            return instanceOnDisk;
+        }
     }
     
     return [super init];
@@ -43,6 +49,7 @@
 
 - (id)init{
     NSString *key = NSStringFromClass(self.class);
+//    TLOG(@"%@", key);
     return [self initFromDiskWithKey:key];
 }
 
@@ -56,7 +63,7 @@
     return self;
 }
 
-- (void) encodeWithCoder:(NSCoder *)aCoder {
+- (void)encodeWithCoder:(NSCoder *)aCoder {
 //    TLOG(@"%@", NSStringFromClass(self.class));
 }
 
@@ -78,26 +85,30 @@
 #pragma mark - ops
 
 - (void)saveToDiskWithKey:(NSString *)key{
+    [self setKey:key];
+    
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
     //    TLOG(@"save %@ %d", key, data.length);
-    [self.userDefaults setObject:data forKey:key];
-    TLOG(@"%@ SAVED", key);
+    [self.userDefaults setObject:data forKey:self.key];
+    TLOG(@"%@ SAVED", self.key);
 }
 
 - (void)saveToDisk{
-    NSString *key = self.className;
-    [self saveToDiskWithKey:key];
+    [self saveToDiskWithKey:self.key];
     
 }
 
 - (void)removeFromDisk{
-//    self = [super init];
-    NSString *key = self.className;
-    [self.userDefaults removeObjectForKey:key];
+    [self.userDefaults removeObjectForKey:self.key];
     
 }
 
 #pragma mark - properties
+
+- (NSString *)key{
+    if (_key) return _key;
+    return self.className;
+}
 
 - (NSString *)className{
     return NSStringFromClass(self.class);

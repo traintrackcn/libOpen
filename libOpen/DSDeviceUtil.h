@@ -32,6 +32,8 @@
 + (CGSize)deviceSize;
 + (CGRect)bounds;
 
+@property (nonatomic, strong) NSString *deviceToken;
+
 //+ (NSUInteger)supportedInterfaceOrientations;
 //+ (BOOL)shouldAutorotate;
 //+ (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;

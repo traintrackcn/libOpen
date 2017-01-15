@@ -32,6 +32,8 @@
 		4A9867CD16E44D1E00F3797D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722E962165CC0700025A614 /* ImageIO.framework */; };
 		4A9867CF16E44D2700F3797D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867CE16E44D2700F3797D /* CoreImage.framework */; };
 		4A9867D116E44D3400F3797D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9867D016E44D3400F3797D /* QuartzCore.framework */; };
+		4A9F4C481D87C56E003DE36B /* NSData+DAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F4C471D87C56E003DE36B /* NSData+DAUtils.m */; };
+		4A9F4C491D87C595003DE36B /* NSData+DAUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A9F4C461D87C56E003DE36B /* NSData+DAUtils.h */; };
 		4AB650591D10FB0000F5735C /* AGObjectPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB650561D10FB0000F5735C /* AGObjectPool.m */; };
 		4AB6505A1D10FB0000F5735C /* NSObject+ObjPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB650581D10FB0000F5735C /* NSObject+ObjPool.m */; };
 		4AB6505B1D10FB0B00F5735C /* AGObjectPool.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AB650551D10FB0000F5735C /* AGObjectPool.h */; };
@@ -61,6 +63,7 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				4A9F4C491D87C595003DE36B /* NSData+DAUtils.h in Copy Files */,
 				4AB6505B1D10FB0B00F5735C /* AGObjectPool.h in Copy Files */,
 				4AB6505C1D10FB0B00F5735C /* NSObject+ObjPool.h in Copy Files */,
 				4A7EDF821CEDF0A800A311D2 /* DAFileUtil.h in Copy Files */,
@@ -100,6 +103,8 @@
 		4A8E886D1B68608A00F48CDD /* NSNumber+AGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AGUtils.m"; sourceTree = "<group>"; };
 		4A9867CE16E44D2700F3797D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4A9867D016E44D3400F3797D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4A9F4C461D87C56E003DE36B /* NSData+DAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DAUtils.h"; sourceTree = "<group>"; };
+		4A9F4C471D87C56E003DE36B /* NSData+DAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DAUtils.m"; sourceTree = "<group>"; };
 		4AB650551D10FB0000F5735C /* AGObjectPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGObjectPool.h; sourceTree = "<group>"; };
 		4AB650561D10FB0000F5735C /* AGObjectPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGObjectPool.m; sourceTree = "<group>"; };
 		4AB650571D10FB0000F5735C /* NSObject+ObjPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjPool.h"; sourceTree = "<group>"; };
@@ -209,6 +214,8 @@
 				4AB650541D10FB0000F5735C /* ObjectPool */,
 				4A7EDF7F1CEDF0A000A311D2 /* DAFileUtil.h */,
 				4A7EDF801CEDF0A000A311D2 /* DAFileUtil.m */,
+				4A9F4C461D87C56E003DE36B /* NSData+DAUtils.h */,
+				4A9F4C471D87C56E003DE36B /* NSData+DAUtils.m */,
 				4A7EDF7A1CEDECFA00A311D2 /* NSString+DAUtils.h */,
 				4A7EDF7B1CEDECFA00A311D2 /* NSString+DAUtils.m */,
 				4A8E886C1B68608A00F48CDD /* NSNumber+AGUtils.h */,
@@ -328,6 +335,7 @@
 				4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */,
 				4A8E88671B685E9D00F48CDD /* NSDate+AGUtils.m in Sources */,
 				4A8E886E1B68608A00F48CDD /* NSNumber+AGUtils.m in Sources */,
+				4A9F4C481D87C56E003DE36B /* NSData+DAUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

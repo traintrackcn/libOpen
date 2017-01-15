@@ -18,12 +18,14 @@
 
 - (void)clearTmpDirectory;
 - (void)createTmpDirectory;
-- (NSURL *)localURLWithFileName:(NSString *)fileName;
+- (NSString *)tmpDirectory;
+- (NSURL *)localURLForFileName:(NSString *)fileName;
+//- (NSURL *)localURLWithFileName:(NSString *)fileName;
 - (NSURL *)localURLWithDownloadURL:(NSURL *)downloadURL;
-- (NSURL *)localRandomURLWithExtension:(NSString *)extension;
+- (NSString *)randomFileNameWithExtension:(NSString *)extension;
 - (NSString *)applicationDocumentsDirectory;
 - (NSString *)fileNameFromDownloadURL:(NSURL *)url;
-- (NSString *)fileNameFromLocalURL:(NSURL *)url;
+//- (NSString *)fileNameFromLocalURL:(NSURL *)url;
 - (BOOL)writeImage:(UIImage *)image toLocalURL:(NSURL *)localURL;
 - (BOOL)isExistLocalURL:(NSURL *)localURL;
 

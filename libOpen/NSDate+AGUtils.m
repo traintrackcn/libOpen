@@ -32,6 +32,16 @@
     return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
 }
 
+- (NSString *)textStyleDateAndTime{
+    NSDateFormatter *dfDate = [[NSDateFormatter alloc] init];
+    [dfDate setDateFormat:@"MM-dd"];
+    
+    NSDateFormatter *dfTime = [[NSDateFormatter alloc] init];
+    [dfTime setDateFormat:@"HH:mm"];
+    
+    return  [NSString stringWithFormat:@"%@ %@", [dfDate stringFromDate:self], [dfTime stringFromDate:self]];
+}
+
 - (NSString *)textStyleForPost{
     NSDateFormatter *dfDate = [[NSDateFormatter alloc] init];
     [dfDate setDateFormat:@"yyyy-MM-dd"];
@@ -71,6 +81,12 @@
 - (id)utcTimezone{
     return [NSTimeZone timeZoneWithName:@"UTC"];
     //    [df setTimeZone:timeZone];
+}
+
+- (NSInteger)daysToOtherDate:(NSDate *)otherDate{
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay fromDate:self toDate:otherDate options:0];
+    return [components day];
 }
 
 @end

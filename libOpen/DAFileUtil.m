@@ -47,10 +47,12 @@
 }
 
 - (BOOL)isExistLocalURL:(NSURL *)localURL{
-    NSString *fileName = [self fileNameFromLocalURL:localURL];
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@", self.tmpDirectory, fileName];
+    if(!localURL) return NO;
+//    NSString *fileName = [self fileNameFromLocalURL:localURL];
+//    NSString *filePath = [NSString stringWithFormat:@"%@/%@", self.tmpDirectory, fileName];
+    NSString *path = localURL.path;
     NSError *error;
-    NSDictionary *fileAttributes = [self.fm attributesOfItemAtPath:filePath error:&error];
+    NSDictionary *fileAttributes = [self.fm attributesOfItemAtPath:path error:&error];
     NSInteger fileSize = [fileAttributes fileSize];
 //    TLOG(@"fileSize -> %ld", (long)fileSize);
     if (fileSize > 0) return YES;
@@ -76,9 +78,9 @@
 
 //------------------------------------------------------------------------------\
 
-- (NSURL *)localURLWithFileName:(NSString *)fileName{
+- (NSURL *)localURLForFileName:(NSString *)fileName{
     NSString *fileStr = [NSString stringWithFormat:@"%@/%@", self.tmpDirectory, fileName];
-    //    TLOG(@"fileStr -> %@", fileStr);
+        TLOG(@"fileStr -> %@", fileStr);
     return [NSURL URLWithString:fileStr];
 }
 
@@ -89,14 +91,10 @@
     return [NSURL URLWithString:fileStr];
 }
 
-- (NSURL *)localRandomURLWithExtension:(NSString *)extension{
+- (NSString *)randomFileNameWithExtension:(NSString *)extension{
     NSString *fileName = [NSString randomStringWithLength:10];
-    NSString *fileStr = [NSString stringWithFormat:@"%@/%@.%@", self.tmpDirectory, fileName, extension];
-    //    TLOG(@"fileStr -> %@", fileStr);
-    return [NSURL URLWithString:fileStr];
+    return [NSString stringWithFormat:@"%@.%@", fileName, extension];
 }
-
-
 
 - (NSString *)fileNameFromDownloadURL:(NSURL *)url{
     if (!url) return nil;
@@ -109,11 +107,11 @@
     
 }
 
-- (NSString *)fileNameFromLocalURL:(NSURL *)url{
-    NSString *str = url.absoluteString;
-    NSArray *arr = [str componentsSeparatedByString:@"/"];
-    return arr.lastObject;
-}
+//- (NSString *)fileNameFromLocalURL:(NSURL *)url{
+//    NSString *str = url.absoluteString;
+//    NSArray *arr = [str componentsSeparatedByString:@"/"];
+//    return arr.lastObject;
+//}
 
 #pragma mark -
 
