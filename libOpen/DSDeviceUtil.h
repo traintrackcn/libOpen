@@ -23,6 +23,7 @@
 + (BOOL)isRetina;
 + (BOOL)iOS7AndAbove;
 + (BOOL)iOS8AndAbove;
++ (BOOL)iOS10AndAbove;
 + (BOOL)isNotIOS8AndAbove;
 + (CGFloat)offsetOfUIViewInDifferentOS;
 + (NSString *)systemInfo;

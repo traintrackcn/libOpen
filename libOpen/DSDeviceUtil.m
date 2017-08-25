@@ -172,6 +172,11 @@
     return NO;
 }
 
++ (BOOL)iOS10AndAbove{
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 10.0) return YES;
+    return NO;
+}
+
 + (BOOL)isNotIOS8AndAbove{
     return !self.iOS8AndAbove;
 }

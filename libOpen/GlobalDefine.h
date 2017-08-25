@@ -15,6 +15,9 @@
 #define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define PTM_RATIO 32.0
 #define RANDOM_INT arc4random()%999999999
+#define TEXT_SEPARATOR @"|#|"
+#define DEPRECATED __attribute__((deprecated))
+#define DEPRECATED_WITH_MSG(msg) __attribute((deprecated((msg))))
 
 NS_INLINE float RADIAN_FROM_DEGREE(degrees) {
     return (degrees / 180) * M_PI;

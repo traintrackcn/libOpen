@@ -80,7 +80,7 @@
 
 - (NSURL *)localURLForFileName:(NSString *)fileName{
     NSString *fileStr = [NSString stringWithFormat:@"%@/%@", self.tmpDirectory, fileName];
-        TLOG(@"fileStr -> %@", fileStr);
+//        TLOG(@"fileStr -> %@", fileStr);
     return [NSURL URLWithString:fileStr];
 }
 
