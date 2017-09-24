@@ -41,6 +41,7 @@
 }
 
 - (BOOL)isBiggerThan:(NSNumber *)num{
+    NSAssert(num, @"num should not be nil");
     if ([self compare:num] == NSOrderedDescending) {
         return YES;
     }
@@ -67,14 +68,14 @@
 }
 
 - (NSString *)valueForCurrency{
-//    TLOG(@"self -> %@", self);
+    TLOG(@"self -> %@", self);
     NSNumberFormatter *f = [[NSNumberFormatter alloc]init];
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
     [f setRoundingMode:NSNumberFormatterRoundHalfUp];
     [f setMaximumFractionDigits:2];
     [f setMinimumFractionDigits:2];
     NSString *result = [f stringFromNumber:self];
-    if (result) result = @"0.00";
+    if (!result) result = @"0.00";
     return result;
 }
 

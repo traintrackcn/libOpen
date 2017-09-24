@@ -131,6 +131,14 @@
     return [DSValueUtil toString:[self.raw objectForKey:key]];
 }
 
+- (NSString *)stringForKeys:(NSArray *)keys{
+    for (NSInteger i = 0; i<keys.count; i++) {
+        NSString *key = [keys objectAtIndex:i];
+        if ([self isAvailableForKey:key]) return [self stringForKey:key];
+    }
+    return nil;
+}
+
 //convert NSNumber to float will lose precision. e.g 1558038.94 -> 1558039
 - (double)floatForKey:(NSString *)key{
     return [[self.raw objectForKey:key] doubleValue];

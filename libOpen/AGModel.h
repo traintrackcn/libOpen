@@ -28,6 +28,7 @@
 #pragma mark - converter
 - (NSDate *)dateForKey:(NSString *)key;
 - (NSString *)stringForKey:(NSString *)key;
+- (NSString *)stringForKeys:(NSArray *)keys;
 - (double)floatForKey:(NSString *)key;
 - (NSNumber *)numberForKey:(NSString *)key;
 - (NSInteger)integerForKey:(NSString *)key;

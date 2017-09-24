@@ -10,9 +10,9 @@
 
 @interface AGObjectPool : AGModel
 
-- (nonnull id)objectForKey:(nonnull NSString *)key;
+- (nonnull id)objectForKey:(nonnull id<NSCopying>)key;
 - (void)setObject:(nullable id)object forKey:(nonnull id<NSCopying>)key;
-- (void)removeObjectForKey:(nonnull id)key;
+- (void)removeObjectForKey:(nonnull id<NSCopying>)key;
 
 @property (nonatomic, copy , nullable) NSString *parentClassName;
 

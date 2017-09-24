@@ -19,6 +19,8 @@
 		4A0CA5541B4F883400DF9379 /* TNibUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218A19C9B72F00F730FF /* TNibUtil.h */; };
 		4A0CA5551B4F883400DF9379 /* TRootViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4ABF218C19C9B72F00F730FF /* TRootViewController.h */; };
 		4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */; };
+		4A6BBD481F774DAE0039978D /* NSObject+AGVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BBD471F774DAE0039978D /* NSObject+AGVCConfig.m */; };
+		4A6BBD491F774E3D0039978D /* NSObject+AGVCConfig.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A6BBD461F774DAE0039978D /* NSObject+AGVCConfig.h */; };
 		4A7EDF7C1CEDECFA00A311D2 /* NSString+DAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EDF7B1CEDECFA00A311D2 /* NSString+DAUtils.m */; };
 		4A7EDF7D1CEDED0700A311D2 /* NSString+DAUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A7EDF7A1CEDECFA00A311D2 /* NSString+DAUtils.h */; };
 		4A7EDF811CEDF0A000A311D2 /* DAFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EDF801CEDF0A000A311D2 /* DAFileUtil.m */; };
@@ -63,6 +65,7 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				4A6BBD491F774E3D0039978D /* NSObject+AGVCConfig.h in Copy Files */,
 				4A9F4C491D87C595003DE36B /* NSData+DAUtils.h in Copy Files */,
 				4AB6505B1D10FB0B00F5735C /* AGObjectPool.h in Copy Files */,
 				4AB6505C1D10FB0B00F5735C /* NSObject+ObjPool.h in Copy Files */,
@@ -91,6 +94,8 @@
 /* Begin PBXFileReference section */
 		4A531BE21A2DAD3D00172FF8 /* AGDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDateUtil.h; sourceTree = "<group>"; };
 		4A531BE31A2DAD3D00172FF8 /* AGDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDateUtil.m; sourceTree = "<group>"; };
+		4A6BBD461F774DAE0039978D /* NSObject+AGVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AGVCConfig.h"; sourceTree = "<group>"; };
+		4A6BBD471F774DAE0039978D /* NSObject+AGVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AGVCConfig.m"; sourceTree = "<group>"; };
 		4A7EDF7A1CEDECFA00A311D2 /* NSString+DAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DAUtils.h"; sourceTree = "<group>"; };
 		4A7EDF7B1CEDECFA00A311D2 /* NSString+DAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DAUtils.m"; sourceTree = "<group>"; };
 		4A7EDF7F1CEDF0A000A311D2 /* DAFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAFileUtil.h; sourceTree = "<group>"; };
@@ -211,6 +216,8 @@
 		9680956713CD344D0014D09A /* libOpen */ = {
 			isa = PBXGroup;
 			children = (
+				4A6BBD461F774DAE0039978D /* NSObject+AGVCConfig.h */,
+				4A6BBD471F774DAE0039978D /* NSObject+AGVCConfig.m */,
 				4AB650541D10FB0000F5735C /* ObjectPool */,
 				4A7EDF7F1CEDF0A000A311D2 /* DAFileUtil.h */,
 				4A7EDF801CEDF0A000A311D2 /* DAFileUtil.m */,
@@ -332,6 +339,7 @@
 				4ABF219719C9B72F00F730FF /* DSValueUtil.m in Sources */,
 				4A531BE51A2DAD3D00172FF8 /* AGDateUtil.m in Sources */,
 				4ABF219C19C9B72F00F730FF /* TNibUtil.m in Sources */,
+				4A6BBD481F774DAE0039978D /* NSObject+AGVCConfig.m in Sources */,
 				4ABF219E19C9B72F00F730FF /* TRootViewController.m in Sources */,
 				4A8E88671B685E9D00F48CDD /* NSDate+AGUtils.m in Sources */,
 				4A8E886E1B68608A00F48CDD /* NSNumber+AGUtils.m in Sources */,

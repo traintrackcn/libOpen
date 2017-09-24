@@ -28,11 +28,11 @@
     [self.dic setObject:object forKey:key];
 }
 
-- (id)objectForKey:(NSString *)key{
+- (id)objectForKey:(nonnull id<NSCopying>)key{
     return [self.dic objectForKey:key];
 }
 
-- (void)removeObjectForKey:(id)key{
+- (void)removeObjectForKey:(nonnull id<NSCopying>)key{
     [self.dic removeObjectForKey:key];
 }
 

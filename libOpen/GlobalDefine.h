@@ -7,7 +7,7 @@
 #define CURRENT_FUNCTION_NAME [NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__]
 
 
-#define TSNLOG(__format, __args...) [[TSNLogger singleton] appendLogEntry: [NSString stringWithFormat:@"%s:%d %@",__PRETTY_FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]] ];
+//#define TSNLOG(__format, __args...) [[TSNLogger singleton] appendLogEntry: [NSString stringWithFormat:@"%s:%d %@",__PRETTY_FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]] ];
 
 #define TLOG(__format,__args...) NSLog(@"%s:%d %@",__PRETTY_FUNCTION__, __LINE__,[NSString stringWithFormat:__format, ##__args]);
 
@@ -19,7 +19,7 @@
 #define DEPRECATED __attribute__((deprecated))
 #define DEPRECATED_WITH_MSG(msg) __attribute((deprecated((msg))))
 
-NS_INLINE float RADIAN_FROM_DEGREE(degrees) {
-    return (degrees / 180) * M_PI;
-}
+//NS_INLINE float RADIAN_FROM_DEGREE(degrees) {
+//    return (degrees / 180) * M_PI;
+//}
 
