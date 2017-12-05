@@ -22,5 +22,6 @@
 + (NSDateComponents *)componetsOfDate:(NSDate *)date;
 + (NSDateComponents *)componetsOfDateStr:(NSString *)dateStr;
 + (NSDate *)dateFromString:(NSString *)dateStr;
++ (NSDate *)dateFromString:(NSString *)dateStr withTimeZone:(NSTimeZone *)timeZone;
 
 @end

@@ -27,6 +27,7 @@
 
 #pragma mark - converter
 - (NSDate *)dateForKey:(NSString *)key;
+- (NSDate *)dateForKey:(NSString *)key withTimeZone:(NSTimeZone *)timeZone;
 - (NSString *)stringForKey:(NSString *)key;
 - (NSString *)stringForKeys:(NSArray *)keys;
 - (double)floatForKey:(NSString *)key;
@@ -35,6 +36,8 @@
 - (BOOL)boolForKey:(NSString *)key;
 - (BOOL)isAvailableForKey:(NSString *)key;
 - (id)objectForKey:(NSString *)key;
+
+- (void)assignValueWithKey:(NSString *)key toDic:(NSMutableDictionary *)d;
 
 //- (void)setStringForKey:(NSString *)key selector:(SEL)selector;
 //- (NSArray *)propertyNames;

@@ -28,6 +28,15 @@
     return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle];
 }
 
+- (NSString *)textStyleDefaultWithTimeZone:(NSTimeZone *)timeZone{
+//    NSDateFormatter *df = [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateStyle:NSDateFormatterMediumStyle];
+    [df setAccessibilityElements:NSDateFormatterNoStyle];
+    if (timeZone) [df setTimeZone:timeZone];
+    return [df stringFromDate:self];
+}
+
 - (NSString *)textStyleDetail{
     return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
 }

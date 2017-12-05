@@ -127,6 +127,11 @@
     return [AGDateUtil dateFromString:value];
 }
 
+- (NSDate *)dateForKey:(NSString *)key withTimeZone:(NSTimeZone *)timeZone{
+    NSString *value = [DSValueUtil toString:[self.raw objectForKey:key]];
+    return [AGDateUtil dateFromString:value withTimeZone:timeZone];
+}
+
 - (NSString *)stringForKey:(NSString *)key{
     return [DSValueUtil toString:[self.raw objectForKey:key]];
 }
@@ -173,8 +178,12 @@
 }
 
 - (BOOL)isAvailableForKey:(NSString *)key{
-    if ([DSValueUtil isNotAvailable:self.raw]) return NO;
+    if (!self.raw) return NO;
     return [DSValueUtil isAvailable:[self.raw objectForKey:key]];
+}
+
+- (void)assignValueWithKey:(NSString *)key toDic:(NSMutableDictionary *)d{
+    if ([self objectForKey:key]) [d setObject:[self objectForKey:key] forKey:key];
 }
 
 //- (void)setStringForKey:(NSString *)key selector:(SEL)selector{

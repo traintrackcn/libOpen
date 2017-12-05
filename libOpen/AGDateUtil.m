@@ -139,10 +139,16 @@
 }
 
 + (NSDate *)dateFromString:(NSString *)dateStr{
+    return [self dateFromString:dateStr withTimeZone:nil];
+}
+
++ (NSDate *)dateFromString:(NSString *)dateStr withTimeZone:(NSTimeZone *)timeZone{
     NSString *value = dateStr;
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
-//    df setTimeZone:<#(NSTimeZone * _Nullable)#>
-//    TLOG(@"origin-value -> %@", value);
+    if (timeZone) [df setTimeZone:timeZone];
+    
+    
+    
     
     if ([value rangeOfString:@"T"].location!=NSNotFound && [value rangeOfString:@"."].location!=NSNotFound) {
 //        if ([value rangeOfString:@"Z"].location != NSNotFound){
@@ -187,6 +193,8 @@
         }
     }
     NSDate *d = [df dateFromString:value];
+    
+//    TLOG(@"value -> %@ df.tz -> %@", value, df.timeZone);
     //    [self setBirthDate:d];
     
 //    TLOG(@"value -> %@ %@", value, df.dateFormat);

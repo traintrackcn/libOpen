@@ -12,6 +12,7 @@
 
 - (NSString *)textStyleShort;
 - (NSString *)textStyleDefault;
+- (NSString *)textStyleDefaultWithTimeZone:(NSTimeZone *)timeZone;
 - (NSString *)textStyleDetail;
 - (NSString *)textStyleForPost;
 - (NSString *)textStyleForPostAutoshipDate;
@@ -20,6 +21,7 @@
 
 - (NSString *)valueForPost;
 - (NSString *)valueForPostStyleUTC;
+//- (NSString *)valueForPostWithTimezone:(NSTimeZone *)timezone;
 
 - (NSInteger)daysToOtherDate:(NSDate *)otherDate;
 

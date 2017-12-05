@@ -50,4 +50,8 @@
     return _dic;
 }
 
+- (NSDictionary *)allDic{
+    return _dic;
+}
+
 @end
