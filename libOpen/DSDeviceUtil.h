@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import "NSObject+Singleton.h"
+
+#define DEVICE [DSDeviceUtil singleton]
 
 @interface DSDeviceUtil : NSObject
 

@@ -18,6 +18,7 @@
 #define TEXT_SEPARATOR @"|#|"
 #define DEPRECATED __attribute__((deprecated))
 #define DEPRECATED_WITH_MSG(msg) __attribute((deprecated((msg))))
+#define YEAR_INTERVAL -31556926
 
 //NS_INLINE float RADIAN_FROM_DEGREE(degrees) {
 //    return (degrees / 180) * M_PI;

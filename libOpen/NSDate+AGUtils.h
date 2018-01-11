@@ -14,6 +14,7 @@
 - (NSString *)textStyleDefault;
 - (NSString *)textStyleDefaultWithTimeZone:(NSTimeZone *)timeZone;
 - (NSString *)textStyleDetail;
+- (NSString *)textStyleDetailWithTimeZone:(NSTimeZone *)timeZone;
 - (NSString *)textStyleForPost;
 - (NSString *)textStyleForPostAutoshipDate;
 - (NSString *)textStyleShortDetail;

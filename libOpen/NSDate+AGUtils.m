@@ -32,13 +32,21 @@
 //    NSDateFormatter *df = [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle];
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateStyle:NSDateFormatterMediumStyle];
-    [df setAccessibilityElements:NSDateFormatterNoStyle];
+    [df setTimeStyle:NSDateFormatterNoStyle];
     if (timeZone) [df setTimeZone:timeZone];
     return [df stringFromDate:self];
 }
 
 - (NSString *)textStyleDetail{
     return [NSDateFormatter localizedStringFromDate:self dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
+}
+
+- (NSString *)textStyleDetailWithTimeZone:(NSTimeZone *)timeZone{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateStyle:NSDateFormatterMediumStyle];
+    [df setTimeStyle:NSDateFormatterShortStyle];
+    if (timeZone) [df setTimeZone:timeZone];
+    return [df stringFromDate:self];
 }
 
 - (NSString *)textStyleDateAndTime{
